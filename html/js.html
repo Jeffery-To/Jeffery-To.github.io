@@ -1,0 +1,3286 @@
+  <div class="row">
+    <div class="col-sm-12"><h2>HTML DOM 对象参考手册</h2></div>
+    </div>
+
+<div id="list" class="wiki-list">
+  <button class="btn btn-xs pull-left">目<br />录</button>
+  <div class="list-group pull-left">
+    <a href="#html1" class="list-group-item">Document</a>
+    <a href="#html1" class="list-group-item">Anchor</a>
+    <a href="#html1" class="list-group-item">Area</a>
+    <a href="#html1" class="list-group-item">Base</a>
+    <a href="#html1" class="list-group-item">Body</a>
+    <a href="#html1" class="list-group-item">Button</a>
+    <a href="#html1" class="list-group-item">Canvas</a>
+    <a href="#html1" class="list-group-item">Event</a>
+    <a href="#html1" class="list-group-item">Form</a>
+    <a href="#html1" class="list-group-item">Frame</a>
+    <a href="#html1" class="list-group-item">Frameset</a>
+    <a href="#html1" class="list-group-item">IFrame</a>
+    <a href="#html1" class="list-group-item">Image</a>
+    <a href="#html1" class="list-group-item">Input Button</a>
+    <a href="#html1" class="list-group-item">Input Checkbox</a>
+    <a href="#html1" class="list-group-item">Input File</a>
+    <a href="#html1" class="list-group-item">Input Hidden</a>
+    <a href="#html1" class="list-group-item">Input Password</a>
+    <a href="#html1" class="list-group-item">Input Radio</a>
+    <a href="#html1" class="list-group-item">Input Reset</a>
+    <a href="#html1" class="list-group-item">Input Submit</a>
+    <a href="#html1" class="list-group-item">Input Text</a>
+    <a href="#html1" class="list-group-item">Link</a>
+    <a href="#html1" class="list-group-item">Meta</a>
+    <a href="#html1" class="list-group-item">Object</a>
+    <a href="#html1" class="list-group-item">Option</a>
+    <a href="#html1" class="list-group-item">Select</a>
+    <a href="#html1" class="list-group-item">Style</a>
+    <a href="#html1" class="list-group-item">Table</a>
+    <a href="#html1" class="list-group-item">TableCell</a>
+    <a href="#html1" class="list-group-item">TableRow</a>
+    <a href="#html1" class="list-group-item">Textarea</a>
+  </div>
+</div>
+
+<div class="container-fluid">
+
+    <div class="row">
+    <div class="col-sm-12 white">  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM Document 对象</h1></div>
+    </div></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12"><h2>Document 对象集合</h2></div>
+    </div></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>all[]</code><p>提供对文档中所有 HTML 元素的访问。</p></div>
+    <div class="col-sm-8"><p></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>anchors[]</code><p>返回对文档中所有 Anchor 对象的引用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+  <div class="col-sm-4"><code>applets</code><p>返回对文档中所有 Applet 对象的引用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>forms[]</code><p>返回对文档中所有 Form 对象引用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>images[]</code><p>返回对文档中所有 Image 对象引用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>links[]</code><p>返回对文档中所有 Area 和 Link 对象引用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+</div>
+
+  <div class="row">
+    <div class="col-sm-4"><h2>Document 对象属性</h2></div>
+    </div></div>
+</div>
+  <div class="row">
+  <div class="col-sm-4"><code>body</code><p>提供对 &lt;body&gt; 元素的直接访问。对于定义了框架集的文档，该属性引用最外层的 &lt;frameset&gt;。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>cookie</code><p>设置或返回与当前文档有关的所有 cookie。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>domain</code><p>返回当前文档的域名。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>lastModified</code><p>返回文档被最后修改的日期和时间。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>referrer</code><p>返回载入当前文档的文档的 URL。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>title</code><p>返回当前文档的标题。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>URL</code><p>返回当前文档的 URL。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Document 对象方法</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>close()</code><p>关闭用  document.open()方法打开的输出流，并显示选定的数据。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>getElementById()</code><p>返回对拥有指定 id 的第一个对象的引用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>getElementsByName()</code><p>返回带有指定名称的对象集合。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>getElementsByTagName()</code><p>返回带有指定标签名的对象集合。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>open()</code><p>打开一个流，以收集来自任何 document.write() 或 document.writeln() 方法的输出。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>write()</code><p>向文档写 HTML 表达式 或 JavaScript 代码。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>writeln()</code><p>等同于 write()方法，不同的是在每个表达式之后写一个换行符。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  
+  <div class="row">
+    <div class="col-sm-12"><h2>Document 对象描述</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM Anchor 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Anchor 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Anchor 对象的属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>accessKey</code><p>设置或返回访问一个链接的快捷键。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>charset</code><p>设置或返回被链接资源的字符集。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>coords</code><p>设置或返回逗号分隔列表，包含了图像映射中链接的坐标。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>href</code><p>设置或返回被链接资源的 URL。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>hreflang</code><p>设置或返回被链接资源的语言代码。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>id</code><p>设置或返回一个链接的 id。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>innerHTML</code><p>设置或返回一个链接的内容。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>name</code><p>设置或返回一个链接的名称。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>rel</code><p>设置或返回当前文档与目标 URL 之间的关系。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>rev</code><p>设置或返回目标 URL 与之间当前文档的关系。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>shape</code><p>设置或返回图像映射中某个链接的形状。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>tabIndex</code><p>设置或返回某个链接的 Tab 键控制次序。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>target</code><p>设置或返回在何处打开链接。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>type</code><p>设置或返回被链接资源的 MIME 类型。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>标准属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>className</code><p>设置或返回元素的 class 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>dir</code><p>设置或返回文本的方向。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>lang</code><p>设置或返回元素的语言代码。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>title</code><p>设置或返回元素的 title 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Anchor 对象的方法</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>blur()</code><p>把焦点从链接上移开。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>focus()</code><p>给链接应用焦点。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM Area 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Area 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Area 对象的属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>accessKey</code><p>设置或返回访问某个区域的快捷键。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>alt</code><p>设置或返回当浏览器无法显示某个区域时的替换文字。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>coords</code><p>设置或返回图像映射中可点击区域的坐标。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>hash</code><p>设置或返回某个区域中 URL 的锚部分。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>host</code><p>设置或返回某个区域中 URL 的主机名和端口。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>href</code><p>设置或返回图像映射中链接的 URL。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>id</code><p>设置或返回某个区域的 id。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>noHref</code><p>设置或返回某个区域是否应是活动的还是非活动的。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>pathname</code><p>设置或返回某个区域中的 URL 的路径名。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>protocol</code><p>设置或返回某个区域中的 URL 的协议。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>search</code><p>设置或返回某个区域中 URL 的查询字符串部分。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>shape</code><p>设置或返回图像映射中某个区域的形状。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>tabIndex</code><p>设置或返回某个区域的 tab 键控制次序。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>target</code><p>设置或返回在何处打开区域中的 link-URL。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>标准属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>className</code><p>设置或返回元素的 class 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>dir</code><p>设置或返回文本的方向。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>lang</code><p>设置或返回元素的语言代码。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>title</code><p>设置或返回元素的 title。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM Base 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Base 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Base 对象属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>href</code><p>设置或返回针对页面中所有链接的基准 URL。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>id</code><p>设置或返回 &lt;base&gt; 元素的 id。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>target</code><p>设置或返回针对页面中所有链接的默认目标框架。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM Body 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Body 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Body 对象的属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>className</code><p>设置或返回元素的 class 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>dir</code><p>设置或返回文本的方向。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>id</code><p>设置或返回 body 的 id。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>lang</code><p>设置或返回元素的语言代码。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>title</code><p>设置或返回元素的咨询性的标题。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM Button 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Button 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Button 对象的属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>accessKey</code><p>设置或返回访问某个按钮的快捷键。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>disabled</code><p>设置或返回是否禁用按钮。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>form</code><p>返回对包含按钮的表单的引用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>id</code><p>设置或返回按钮的 id。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>name</code><p>设置或返回按钮的名称。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>tabIndex</code><p>设置或返回按钮的 Tab 键控制次序。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>type</code><p>返回按钮的表单类型。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>value</code><p>设置或返回显示在按钮上的文本。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>标准属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>className</code><p>设置或返回元素的 class 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>dir</code><p>设置或返回文本的方向。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>lang</code><p>设置或返回元素的语言代码。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>title</code><p>设置或返回元素的 title 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM Canvas 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Canvas 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Canvas 对象的属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>height</code><p>画布的高度。和一幅图像一样，这个属性可以指定为一个整数像素值或者是窗口高度的百分比。当这个值改变的时候，在该画布上已经完成的任何绘图都会擦除掉。默认值是 300。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>height</code><p>画布的高度。和一幅图像一样，这个属性可以指定为一个整数像素值或者是窗口高度的百分比。当这个值改变的时候，在该画布上已经完成的任何绘图都会擦除掉。默认值是 300。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>width</code><p>画布的宽度。和一幅图像一样，这个属性可以指定为一个整数像素值或者是窗口宽度的百分比。当这个值改变的时候，在该画布上已经完成的任何绘图都会擦除掉。默认值是 300。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Canvas 对象的方法</h2></div>
+    </div>
+
+<div class="row">
+<div class="col-sm-4"><code>getContext()</code><p>返回一个用于在画布上绘图的环境。</p></div>
+    <div class="col-sm-8"><p></p></div>
+</div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>参阅</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM Event 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Event 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>事件句柄　(Event Handlers)</h2></div>
+    </div>
+
+  <div class="row">
+	<div class="col-sm-4"><code>onabort</code><p>图像的加载被中断。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+	<div class="col-sm-4"><code>onblur</code><p>元素失去焦点。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+	<div class="col-sm-4"><code>onchange</code><p>域的内容被改变。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+	<div class="col-sm-4"><code>onclick</code><p>当用户点击某个对象时调用的事件句柄。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+	<div class="col-sm-4"><code>ondblclick</code><p>当用户双击某个对象时调用的事件句柄。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+	<div class="col-sm-4"><code>onerror</code><p>在加载文档或图像时发生错误。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+	<div class="col-sm-4"><code>onfocus</code><p>元素获得焦点。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+	<div class="col-sm-4"><code>onkeydown</code><p>某个键盘按键被按下。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+	<div class="col-sm-4"><code>onkeypress</code><p>某个键盘按键被按下并松开。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+	<div class="col-sm-4"><code>onkeyup</code><p>某个键盘按键被松开。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+	<div class="col-sm-4"><code>onload</code><p>一张页面或一幅图像完成加载。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+	<div class="col-sm-4"><code>onmousedown</code><p>鼠标按钮被按下。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+	<div class="col-sm-4"><code>onmousemove</code><p>鼠标被移动。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+	<div class="col-sm-4"><code>onmouseout</code><p>鼠标从某元素移开。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+	<div class="col-sm-4"><code>onmouseover</code><p>鼠标移到某元素之上。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+	<div class="col-sm-4"><code>onmouseup</code><p>鼠标按键被松开。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+	<div class="col-sm-4"><code>onreset</code><p>重置按钮被点击。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+	<div class="col-sm-4"><code>onresize</code><p>窗口或框架被重新调整大小。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+	<div class="col-sm-4"><code>onselect</code><p>文本被选中。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+	<div class="col-sm-4"><code>onsubmit</code><p>确认按钮被点击。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+	<div class="col-sm-4"><code>onunload</code><p>用户退出页面。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>鼠标 / 键盘属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>altKey</code><p>返回当事件被触发时，"ALT" 是否被按下。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>button</code><p>返回当事件被触发时，哪个鼠标按钮被点击。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>clientX</code><p>返回当事件被触发时，鼠标指针的水平坐标。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>clientY</code><p>返回当事件被触发时，鼠标指针的垂直坐标。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>ctrlKey</code><p>返回当事件被触发时，"CTRL" 键是否被按下。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>metaKey</code><p>返回当事件被触发时，"meta" 键是否被按下。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>relatedTarget</code><p>返回与事件的目标节点相关的节点。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>screenX</code><p>返回当某个事件被触发时，鼠标指针的水平坐标。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>screenY</code><p>返回当某个事件被触发时，鼠标指针的垂直坐标。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>shiftKey</code><p>返回当事件被触发时，"SHIFT" 键是否被按下。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>IE 属性</h2></div>
+    </div>
+
+  <div class="row">
+		<div class="col-sm-4"><code>cancelBubble</code><p>如果事件句柄想阻止事件传播到包容对象，必须把该属性设为 true。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+		<div class="col-sm-4"><code>fromElement</code><p>对于 mouseover 和 mouseout 事件，fromElement 引用移出鼠标的元素。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+		<div class="col-sm-4"><code>keyCode</code><p>对于 keypress 事件，该属性声明了被敲击的键生成的 Unicode 字符码。对于 keydown 和 keyup 事件，它指定了被敲击的键的虚拟键盘码。虚拟键盘码可能和使用的键盘的布局相关。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+		<div class="col-sm-4"><code>offsetX,offsetY</code><p>发生事件的地点在事件源元素的坐标系统中的 x 坐标和 y 坐标。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+		<div class="col-sm-4"><code>returnValue</code><p>如果设置了该属性，它的值比事件句柄的返回值优先级高。把这个属性设置为 fasle，可以取消发生事件的源元素的默认动作。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+		<div class="col-sm-4"><code>srcElement</code><p>对于生成事件的 Window 对象、Document 对象或 Element 对象的引用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+		<div class="col-sm-4"><code>toElement</code><p>对于 mouseover 和 mouseout 事件，该属性引用移入鼠标的元素。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+		<div class="col-sm-4"><code>x,y</code><p>事件发生的位置的 x 坐标和 y 坐标，它们相对于用CSS动态定位的最内层包容元素。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>标准 Event 属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>bubbles</code><p>返回布尔值，指示事件是否是起泡事件类型。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>cancelable</code><p>返回布尔值，指示事件是否可拥可取消的默认动作。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>currentTarget</code><p>返回其事件监听器触发该事件的元素。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>eventPhase</code><p>返回事件传播的当前阶段。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>target</code><p>返回触发此事件的元素（事件的目标节点）。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>timeStamp</code><p>返回事件生成的日期和时间。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>type</code><p>返回当前 Event 对象表示的事件的名称。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>标准 Event 方法</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>initEvent()</code><p>初始化新创建的 Event 对象的属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>preventDefault()</code><p>通知浏览器不要执行与事件关联的默认动作。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <td class="col-sm-4"><code>stopPropagation()</code><p>不再派发事件。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM Form 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Form 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Form 对象集合</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>elements[]</code><p>包含表单中所有元素的数组。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Form 对象属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>acceptCharset</code><p>服务器可接受的字符集。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>action</code><p>设置或返回表单的 action 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>enctype</code><p>设置或返回表单用来编码内容的 MIME 类型。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>id</code><p>设置或返回表单的 id。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>length</code><p>返回表单中的元素数目。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>method</code><p>设置或返回将数据发送到服务器的 HTTP 方法。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>name</code><p>设置或返回表单的名称。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>target</code><p>设置或返回表单提交结果的 Frame 或 Window 名。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>标准属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>className</code><p>设置或返回元素的 class 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>dir</code><p>设置或返回文本的方向。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>lang</code><p>设置或返回元素的语言代码。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>title</code><p>设置或返回元素的 title 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Form 对象方法</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>reset()</code><p>把表单的所有输入元素重置为它们的默认值。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>submit()</code><p>提交表单。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Form 对象事件句柄</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>onreset</code><p>在重置表单元素之前调用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>onsubmit</code><p>在提交表单之前调用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM Frame 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Frame 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Frame 对象的属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>contentDocument</code><p>容纳框架的内容的文档。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>frameBorder</code><p>设置或返回是否显示框架周围的边框。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>id</code><p>设置或返回框架的 id。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>longDesc</code><p>设置或返回指向包含框架内容描述文档的 URL。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>marginHeight</code><p>设置或返回框架的顶部和底部页空白。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>marginWidth</code><p>设置或返回框架的左边缘和右边缘的空白。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>name</code><p>设置或返回框架的名称。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>noResize</code><p>设置或返回框架是否可调整大小。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>scrolling</code><p>设置或返回框架是否可拥有滚动条。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>src</code><p>设置或返回应被加载到框架中的文档的 URL。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>标准属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>className</code><p>设置或返回元素的 class 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>dir</code><p>设置或返回文本的方向。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>lang</code><p>设置或返回元素的语言代码。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>title</code><p>设置或返回元素的 title 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM Frameset 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Frameset 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Frameset 对象的属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>cols</code><p>设置或返回框架集中列的数目。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>id</code><p>设置或返回框架集的 id。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>rows</code><p>设置或返回框架集中行的数目。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>标准属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>className</code><p>设置或返回元素的 class 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>dir</code><p>设置或返回文本的方向。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>lang</code><p>设置或返回元素的语言代码。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>title</code><p>设置或返回元素的 title 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM IFrame 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>IFrame 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>IFrame 对象的属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>align</code><p>根据周围的文字排列 iframe。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>contentDocument</code><p>容纳框架的内容的文档。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>frameBorder</code><p>设置或返回是否显示 iframe 周围的边框。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>height</code><p>设置或返回 iframe 的高度。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>id</code><p>设置或返回 iframe 的 id。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>longDesc</code><p>设置或返回描述  iframe 内容的文档的 URL。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>marginHeight</code><p>设置或返回 iframe 的顶部和底部的页空白。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>marginWidth</code><p>设置或返回 iframe 的左侧和右侧的页空白。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>name</code><p>设置或返回 iframe 的名称。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>scrolling</code><p>设置或返回 iframe 是否可拥有滚动条。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>src</code><p>设置或返回应载入 iframe 中的文档的 URL。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>width</code><p>设置或返回 iframe 的宽度。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>标准属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>className</code><p>设置或返回元素的 class 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>dir</code><p>设置或返回文本的方向。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>lang</code><p>设置或返回元素的语言代码。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>title</code><p>设置或返回元素的 title 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM Image 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Image 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Image 对象的属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>align</code><p>设置或返回与内联内容的对齐方式。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>alt</code><p>设置或返回无法显示图像时的替代文本。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border</code><p>设置或返回图像周围的边框。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>complete</code><p>返回浏览器是否已完成对图像的加载。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>height</code><p>设置或返回图像的高度。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>hspace</code><p>设置或返回图像左侧和右侧的空白。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>id</code><p>设置或返回图像的 id。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>isMap</code><p>返回图像是否是服务器端的图像映射。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>longDesc</code><p>设置或返回指向包含图像描述的文档的 URL。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>lowsrc</code><p>设置或返回指向图像的低分辨率版本的 URL。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>name</code><p>设置或返回图像的名称。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>src</code><p>设置或返回图像的 URL。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>useMap</code><p>设置或返回客户端图像映射的 usemap 属性的值。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>vspace</code><p>设置或返回图像的顶部和底部的空白。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>width</code><p>设置或返回图像的宽度。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>标准属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>className</code><p>设置或返回元素的 class 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>title</code><p>设置或返回元素的 title。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Image 对象的事件句柄</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>onabort</code><p>当用户放弃图像的装载时调用的事件句柄。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>onerror</code><p>在装载图像的过程中发生错误时调用的事件句柄。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>onload</code><p>当图像装载完毕时调用的事件句柄。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM Button 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Button 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Button 对象的属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>accessKey</code><p>设置或返回访问按钮的快捷键。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>alt</code><p>设置或返回当浏览器无法显示按钮时供显示的替代文本。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>disabled</code><p>设置或返回是否禁用按钮。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>form</code><p>返回对包含该按钮的表单对象的引用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>id</code><p>设置或返回按钮的 id。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>name</code><p>设置或返回按钮的名称。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>tabIndex</code><p>设置或返回按钮的 tab 键控制次序。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>type</code><p>返回按钮的表单元素类型。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>value</code><p>设置或返回在按钮上显示的文本。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>标准属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>className</code><p>设置或返回元素的 class 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>dir</code><p>设置或返回文本的方向。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>lang</code><p>设置或返回元素的语言代码。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>title</code><p>设置或返回元素的 title 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Button 对象的方法</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>blur()</code><p>把焦点从元素上移开。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>click()</code><p>在某个按钮上模拟一次鼠标单击。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>focus()</code><p>为某个按钮赋予焦点。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM Checkbox 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Checkbox 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Checkbox 对象的属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>accessKey</code><p>设置或返回访问 checkbox 的快捷键。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>alt</code><p>设置或返回不支持 checkbox 时显示的替代文本。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>checked</code><p>设置或返回 checkbox 是否应被选中。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>defaultChecked</code><p>返回 checked 属性的默认值。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>disabled</code><p>设置或返回 checkbox 是否应被禁用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>form</code><p>返回对包含 checkbox 的表单的引用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>id</code><p>设置或返回 checkbox 的 id。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>name</code><p>设置或返回 checkbox 的名称。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>tabIndex</code><p>设置或返回 checkbox 的 tab 键控制次序。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>type</code><p>返回 checkbox 的表单元素类型。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>value</code><p>设置或返回 checkbox 的 value 属性的值</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>标准属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>className</code><p>设置或返回元素的 class 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>dir</code><p>设置或返回文本的方向。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>lang</code><p>设置或返回元素的语言代码。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>title</code><p>设置或返回元素的 title 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Checkbox 对象的方法</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>blur()</code><p>从 checkbox 上移开焦点。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>click()</code><p>模拟在 checkbox 中的一次鼠标点击。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>focus()</code><p>为 checkbox 赋予焦点。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM FileUpload 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>FileUpload 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>FileUpload 对象的属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>accept</code><p>设置或返回指示文件传输的 MIME 类型的列表（逗号分隔）。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>accessKey</code><p>设置或返回访问 FileUpload 对象的快捷键。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>alt</code><p>设置或返回不支持 &lt;input type="file"&gt; 时显示的替代文字。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>defaultValue</code><p>设置或返回 FileUpload 对象的初始值。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>disabled</code><p>设置或返回是否禁用 FileUpload 对象。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>form</code><p>返回对包含 FileUpload 对象的表单的引用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>id</code><p>设置或返回 FileUpload 对象的 id。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>name</code><p>设置或返回 FileUpload 对象的名称。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>tabIndex</code><p>设置或返回定义 FileUpload 对象的 tab 键控制次序的索引号。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>type</code><p>返回表单元素的类型。对于 FileUpload ，则是 "file" 。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>value</code><p>返回由用户输入设置的文本后，FileUpload 对象的文件名。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>标准属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>className</code><p>设置或返回元素的 class 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>dir</code><p>设置或返回文本的方向。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>lang</code><p>设置或返回元素的语言代码。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>title</code><p>设置或返回元素的 title 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>FileUpload 对象的方法</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>blur()</code><p>从 FileUpload 对象上移开焦点。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>focus()</code><p>为 FileUpload 对象赋予焦点。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>select()</code><p>选取 FileUpload 对象。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM Hidden 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Hidden 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Hidden 对象的属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>alt</code><p>设置或返回当不支持隐藏输入域时显示的替代文本。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>form</code><p>返回一个对包含隐藏域的表单的引用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>id</code><p>设置或返回隐藏域的 id。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>name</code><p>设置或返回隐藏域的名称。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>type</code><p>返回隐藏输入域的表单类型。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>value</code><p>设置或返回隐藏域的 value 属性的值。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>标准属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>className</code><p>设置或返回元素的 class 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>dir</code><p>设置或返回文本的方向。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>lang</code><p>设置或返回元素的语言代码。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>title</code><p>设置或返回元素的 title 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM Password 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Password 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Password 对象属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>accessKey</code><p>设置或返回访问密码字段的快捷键。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>alt</code><p>设置或返回当不支持密码字段时显示的替代文字。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>defaultValue</code><p>设置或返回密码字段的默认值。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>disabled</code><p>设置或返回是否应被禁用密码字段。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>form</code><p>返回对包含此密码字段的表单的引用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>id</code><p>设置或返回密码字段的 id。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>maxLength</code><p>设置或返回密码字段中字符的最大数目。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>name</code><p>设置或返回密码字段的名称。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>readOnly</code><p>设置或返回密码字段是否应当是只读的。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>size</code><p>设置或返回密码字段的长度。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>tabIndex</code><p>设置或返回密码字段的 tab 键控制次序。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>type</code><p>返回密码字段的表单元素类型。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>value</code><p>设置或返回密码字段的 value 属性的值。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>标准属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>className</code><p>设置或返回元素的 class 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>dir</code><p>设置或返回文本的方向。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>lang</code><p>设置或返回元素的语言代码。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>title</code><p>设置或返回元素的 title 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Password 对象方法</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>blur()</code><p>从密码字段移开焦点。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>focus()</code><p>为密码字段赋予焦点。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>select()</code><p>选取密码字段中的文本。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM Radio 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Radio 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Radio 对象属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>accessKey</code><p>设置或返回访问单选按钮的快捷键。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>alt</code><p>设置或返回在不支持单选按钮时显示的替代文本。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>checked</code><p>设置或返回单选按钮的状态。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>defaultChecked</code><p>返回单选按钮的默认状态。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>disabled</code><p>设置或返回是否禁用单选按钮。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>form</code><p>返回一个对包含此单选按钮的表单的引用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>id</code><p>设置或返回单选按钮的 id。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>name</code><p>设置或返回单选按钮的名称。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>tabIndex</code><p>设置或返回单选按钮的 tab 键控制次序。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>type</code><p>返回单选按钮的表单类型。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>value</code><p>设置或返回单选按钮的 value 属性的值。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>标准属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>className</code><p>设置或返回元素的 class 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>dir</code><p>设置或返回文本的方向。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>lang</code><p>设置或返回元素的语言代码。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>title</code><p>设置或返回元素的 title 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Radio 对象方法</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>blur()</code><p>从单选按钮移开焦点。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>click()</code><p>在单选按钮上模拟一次鼠标点击。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>focus()</code><p>为单选按钮赋予焦点。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM Reset 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Reset 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Reset 对象属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>accesskey</code><p>设置或返回访问重置按钮的快捷键。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>alt</code><p>设置或返回当浏览器不支持重置按钮时供显示的替代文本。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>disabled</code><p>设置或返回重置按钮是否应被禁用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>form</code><p>返回一个对包含此重置按钮的表单对象的引用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>id</code><p>设置或返回重置按钮的 id。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>name</code><p>设置或返回重置按钮的名称。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>tabIndex</code><p>设置或返回重置按钮的 tab 键控制次序。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>type</code><p>返回重置按钮的表单元素类型。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>value</code><p>设置或返回重置按钮上显示的文本。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>标准属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>className</code><p>设置或返回元素的 class 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>dir</code><p>设置或返回文本的方向。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>lang</code><p>设置或返回元素的语言代码。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>title</code><p>设置或返回元素的 title 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Reset 对象方法</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>blur()</code><p>从重置按钮上移开焦点。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>click()</code><p>在重置按钮上模拟一次鼠标点击。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>focus()</code><p>为重置按钮赋予焦点。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM Submit 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Submit 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Submit 对象属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>accessKey</code><p>设置或返回访问提交按钮的快捷键。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>alt</code><p>设置或返回当浏览器不支持提交按钮时供显示的替代文本。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>disabled</code><p>设置或返回提交按钮是否应被禁用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>form</code><p>返回一个对包含此提交按钮的表单的引用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>id</code><p>设置或返回提交按钮的 id。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>name</code><p>设置或返回提交按钮的名称。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>tabIndex</code><p>设置或返回提交按钮的 tab 键控制次序。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>type</code><p>返回提交按钮的表单元素类型。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>value</code><p>设置或返回在提交按钮上显示的文本。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>标准属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>className</code><p>设置或返回元素的 class 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>dir</code><p>设置或返回文本的方向。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>lang</code><p>设置或返回元素的语言代码。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>title</code><p>设置或返回元素的 title 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Submit 对象方法</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>blur()</code><p>从提交按钮上移开焦点。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>click()</code><p>在提交按钮上模拟一次鼠标点击。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>focus()</code><p>为提交按钮赋予焦点。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM Text 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Text 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Text 对象属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>accessKey</code><p>设置或返回访问文本域的快捷键。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>alt</code><p>设置或返回当浏览器不支持文本域时供显示的替代文本。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>defaultValue</code><p>设置或返回文本域的默认值。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>disabled</code><p>设置或返回文本域是否应被禁用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>form</code><p>返回一个对包含文本域的表单对象的引用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>id</code><p>设置或返回文本域的 id。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>maxLength</code><p>设置或返回文本域中的最大字符数。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>name</code><p>设置或返回文本域的名称。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>readOnly</code><p>设置或返回文本域是否应是只读的。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>size</code><p>设置或返回文本域的尺寸。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>tabIndex</code><p>设置或返回文本域的 tab 键控制次序。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>type</code><p>返回文本域的表单元素类型。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>value</code><p>设置或返回文本域的 value 属性的值。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>标准属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>className</code><p>设置或返回元素的 class 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>dir</code><p>设置或返回文本的方向。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>lang</code><p>设置或返回元素的语言代码。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>title</code><p>设置或返回元素的 title 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Text 对象方法</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>blur()</code><p>从文本域上移开焦点。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>focus()</code><p>在文本域上设置焦点。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>select()</code><p>选取文本域中的内容。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM Link 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Link 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Link 对象属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>charset</code><p>设置或返回目标 URL 的字符编码。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>disabled</code><p>设置或返回目标 URL 是否当被禁用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>href</code><p>设置或返回被链接资源的 URL。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>hreflang</code><p>设置或返回目标 URL 的基准语言。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>id</code><p>设置或返回某个 &lt;link&gt; 元素的 id。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>media</code><p>设置或返回文档显示的设备类型。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>name</code><p>设置或返回 &lt;link&gt; 元素的名称。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>rel</code><p>设置或返回当前文档与目标 URL之间的关系。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>rev</code><p>设置或返回目标 URL 与当前文档之间的关系。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>type</code><p>设置或返回目标 URL 的 MIME 类型。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>标准属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>dir</code><p>设置或返回文本的方向。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>lang</code><p>设置或返回元素的语言代码。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM Meta 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Meta 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Meta 对象属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>content</code><p>设置或返回 &lt;meta&gt; 元素的 content 属性的值。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>httpEquiv</code><p>把 content 属性连接到一个 HTTP 头部。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>name</code><p>把 content 属性连接到某个名称。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>scheme</code><p>设置或返回用于解释 content 属性的值的格式。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM Object 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Object 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Object 对象属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>align</code><p>设置或返回对象相对于周围文本的对齐方式。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>archive</code><p>设置或返回一个字符串，用于实现对象的存档功能。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border</code><p>设置或返回围绕对象的边框。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>code</code><p>设置或返回文件的 URL，该文件包含已编译的 Java 类。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>codeBase</code><p>设置或返回组件的 URL。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>codeType</code><p>&nbsp;</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>data</code><p>&nbsp;</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>declare</code><p>&nbsp;</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>form</code><p>返回对对象的父表单的引用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>height</code><p>设置或返回对象的高度。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>hspace</code><p>设置或返回对象的水平外边距。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>name</code><p>设置或返回对象的名称。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>standby</code><p>设置或返回在加载对象时返回的消息。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>type</code><p>设置或返回通过 data 属性下载的数据的内容类型。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>useMap</code><p>&nbsp;</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>vspace</code><p>设置或返回对象的垂直外边距。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>width</code><p>设置或返回对象的宽度。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>标准属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>className</code><p>设置或返回元素的 class 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>dir</code><p>设置或返回文本的方向。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>lang</code><p>设置或返回元素的语言代码。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>title</code><p>设置或返回元素的 title 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM Option 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Option 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Option 对象的属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>defaultSelected</code><p>返回 selected  属性的默认值。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>disabled</code><p>设置或返回选项是否应被禁用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>form</code><p>返回对包含该元素的 &lt;form&gt; 元素的引用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>id</code><p>设置或返回选项的 id。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>index</code><p>返回下拉列表中某个选项的索引位置。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>label</code><p>设置或返回选项的标记 （仅用于选项组）。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>selected</code><p>设置或返回 selected 属性的值。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>text</code><p>设置或返回某个选项的纯文本值。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>value</code><p>设置或返回被送往服务器的值。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>标准属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>className</code><p>设置或返回元素的 class 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>dir</code><p>设置或返回文本的方向。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>lang</code><p>设置或返回元素的语言代码。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>title</code><p>设置或返回元素的 title 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM Select 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Select 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Select 对象集合</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>options[]</code><p>返回包含下拉列表中的所有选项的一个数组。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Select 对象属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>disabled</code><p>设置或返回是否应禁用下拉列表。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>form</code><p>返回对包含下拉列表的表单的引用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>id</code><p>设置或返回下拉列表的 id。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>length</code><p>返回下拉列表中的选项数目。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>multiple</code><p>设置或返回是否选择多个项目。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>name</code><p>设置或返回下拉列表的名称。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>selectedIndex</code><p>设置或返回下拉列表中被选项目的索引号。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>size</code><p>设置或返回下拉列表中的可见行数。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>tabIndex</code><p>设置或返回下拉列表的 tab 键控制次序。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>type</code><p>返回下拉列表的表单类型。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>标准属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>className</code><p>设置或返回元素的 class 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>dir</code><p>设置或返回文本的方向。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>lang</code><p>设置或返回元素的语言代码。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>title</code><p>设置或返回元素的 title 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Select 对象方法</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>add()</code><p>向下拉列表添加一个选项。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>blur()</code><p>从下拉列表移开焦点。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>focus()</code><p>在下拉列表上设置焦点。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>remove()</code><p>从下拉列表中删除一个选项。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Select 对象事件句柄</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>onchange</code><p>当改变选择时调用的事件句柄。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM Style 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Style 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><p>使用 Style 对象属性的语法：document.getElementById("id").style.property="值"</p></div>
+</div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Style 对象的属性：</h2></div>
+    </div>
+
+<ul>
+      <a href="#html1" class="list-group-item">"#background">背景</a>
+      <a href="#html1" class="list-group-item">"#border">边框和边距</a>
+      <a href="#html1" class="list-group-item">"#layout">布局</a>
+      <a href="#html1" class="list-group-item">"#list">列表</a>
+      <a href="#html1" class="list-group-item">"#misc">杂项</a>
+      <a href="#html1" class="list-group-item">"#positioning">定位</a>
+      <a href="#html1" class="list-group-item">"#printing">打印</a>
+      <a href="#html1" class="list-group-item">"#scrollbar">滚动条</a>
+      <a href="#html1" class="list-group-item">"#table">表格</a>
+      <a href="#html1" class="list-group-item">"#text">文本</a>
+      <a href="#html1" class="list-group-item">"#std">规范</a>
+</ul>
+
+  <div class="row">
+    <div class="col-sm-4"><h3>Background 属性</h3></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>background</code><p>在一行中设置所有的背景属性</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>backgroundAttachment</code><p>设置背景图像是否固定或随页面滚动</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>backgroundColor</code><p>设置元素的背景颜色</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>backgroundImage</code><p>设置元素的背景图像</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>backgroundPosition</code><p>设置背景图像的起始位置</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>backgroundPositionX</code><p>设置backgroundPosition属性的X坐标</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>backgroundPositionY</code><p>设置backgroundPosition属性的Y坐标</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>backgroundRepeat</code><p>设置是否及如何重复背景图像</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><h3>Border 和 Margin 属性</h3></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>border</code><p>在一行设置四个边框的所有属性</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>borderBottom</code><p>在一行设置底边框的所有属性</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>borderBottomColor</code><p>设置底边框的颜色</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>borderBottomStyle</code><p>设置底边框的样式</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>borderBottomWidth</code><p>设置底边框的宽度</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>borderColor</code><p>设置所有四个边框的颜色 (可设置四种颜色)</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>borderLeft</code><p>在一行设置左边框的所有属性</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>borderLeftColor</code><p>设置左边框的颜色</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>borderLeftStyle</code><p>设置左边框的样式</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>borderLeftWidth</code><p>设置左边框的宽度</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>borderRight</code><p>在一行设置右边框的所有属性</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>borderRightColor</code><p>设置右边框的颜色</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>borderRightStyle</code><p>设置右边框的样式</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>borderRightWidth</code><p>设置右边框的宽度</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>borderStyle</code><p>设置所有四个边框的样式 (可设置四种样式)</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>borderTop</code><p>在一行设置顶边框的所有属性</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>borderTopColor</code><p>设置顶边框的颜色</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>borderTopStyle</code><p>设置顶边框的样式</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>borderTopWidth</code><p>设置顶边框的宽度</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>borderWidth</code><p>设置所有四条边框的宽度 (可设置四种宽度)</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>margin</code><p>设置元素的边距 (可设置四个值)</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>marginBottom</code><p>设置元素的底边距</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>marginLeft</code><p>设置元素的左边距</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>marginRight</code><p>设置元素的右边据</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>marginTop</code><p>设置元素的顶边距</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>outline</code><p>在一行设置所有的outline属性</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>outlineColor</code><p>设置围绕元素的轮廓颜色</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>outlineStyle</code><p>设置围绕元素的轮廓样式</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>outlineWidth</code><p>设置围绕元素的轮廓宽度</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>padding</code><p>设置元素的填充 (可设置四个值)</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>paddingBottom</code><p>设置元素的下填充</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>paddingLeft</code><p>设置元素的左填充</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>paddingRight</code><p>设置元素的右填充</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>paddingTop</code><p>设置元素的顶填充</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><h3>"layout">Layout 属性</a></h3></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>clear</code><p>设置在元素的哪边不允许其他的浮动元素</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>clip</code><p>设置元素的形状</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>content</code><p>设置元信息</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>counterIncrement</code><p>设置其后是正数的计数器名称的列表。其中整数指示每当元素出现时计数器的增量。默认是1。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>counterReset</code><p>设置其后是正数的计数器名称的列表。其中整数指示每当元素出现时计数器被设置的值。默认是0。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>cssFloat</code><p>设置图像或文本将出现（浮动）在另一元素中的何处。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>cursor</code><p>设置显示的指针类型</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>direction</code><p>设置元素的文本方向</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>display</code><p>设置元素如何被显示</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>height</code><p>设置元素的高度</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>markerOffset</code><p>设置marker box的principal box距离其最近的边框边缘的距离</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>marks</code><p>设置是否cross marks或crop marks应仅仅被呈现于page box边缘之外</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>maxHeight</code><p>设置元素的最大高度</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>maxWidth</code><p>设置元素的最大宽度</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>minHeight</code><p>设置元素的最小高度</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>minWidth</code><p>设置元素的最小宽度</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>overflow</code><p>规定如何处理不适合元素盒的内容</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>verticalAlign</code><p>设置对元素中的内容进行垂直排列</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>visibility</code><p>设置元素是否可见</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>width</code><p>设置元素的宽度</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><h3>"list">List 属性</h3></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>listStyle</code><p>在一行设置列表的所有属性</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>listStyleImage</code><p>把图像设置为列表项标记</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>listStylePosition</code><p>改变列表项标记的位置</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>listStyleType</code><p>设置列表项标记的类型</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><h3>Positioning 属性</h3></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>bottom</code><p>设置元素的底边缘距离父元素底边缘的之上或之下的距离</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>left</code><p>置元素的左边缘距离父元素左边缘的左边或右边的距离</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>position</code><p>把元素放置在static, relative, absolute 或 fixed 的位置</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>right</code><p>置元素的右边缘距离父元素右边缘的左边或右边的距离</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>top</code><p>设置元素的顶边缘距离父元素顶边缘的之上或之下的距离</p></div>
+    <div class="col-sm-8"><p></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>zIndex</code><p>设置元素的堆叠次序</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><h3>Printing 属性</h3></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>orphans</code><p>设置段落留到页面底部的最小行数</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>page</code><p>设置显示某元素时使用的页面类型</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>pageBreakAfter</code><p>设置某元素之后的分页行为</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>pageBreakBefore</code><p>设置某元素之前的分页行为</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>pageBreakInside</code><p>设置某元素内部的分页行为</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>size</code><p>设置页面的方向和尺寸</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>widows</code><p>设置段落必须留到页面顶部的最小行数</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  
+  <div class="row">
+    <div class="col-sm-4"><h3>Scrollbar 属性 (IE-only)</h3></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>scrollbar3dLightColor</code><p>设置箭头和滚动条左侧和顶边的颜色</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>scrollbarArrowColor</code><p>设置滚动条上的箭头颜色</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>scrollbarBaseColor</code><p>设置滚动条的底色</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>scrollbarDarkShadowColor</code><p>设置箭头和滚动条右侧和底边的颜色</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>scrollbarFaceColor</code><p>设置滚动条的表色</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>scrollbarHighlightColor</code><p>设置箭头和滚动条左侧和顶边的颜色，以及滚动条的背景</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>scrollbarShadowColor</code><p>设置箭头和滚动条右侧和底边的颜色</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>scrollbarTrackColor</code><p>设置滚动条的背景色</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  
+  <div class="row">
+    <div class="col-sm-4"><h3>Table 属性</h3></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>borderCollapse</code><p>设置表格边框是否合并为单边框，或者像在标准的HTML中那样分离。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>borderSpacing</code><p>设置分隔单元格边框的距离</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>captionSide</code><p>设置表格标题的位置</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>emptyCells</code><p>设置是否显示表格中的空单元格</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>tableLayout</code><p>设置用来显示表格单元格、行以及列的算法</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><h3>Text 属性</h3></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>color</code><p>设置文本的颜色</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>font</code><p>在一行设置所有的字体属性</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>fontFamily</code><p>设置元素的字体系列。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>fontSize</code><p>设置元素的字体大小。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>fontSizeAdjust</code><p>设置/调整文本的尺寸</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>fontStretch</code><p>设置如何紧缩或伸展字体</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>fontStyle</code><p>设置元素的字体样式</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>fontVariant</code><p>用小型大写字母字体来显示文本</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>fontWeight</code><p>设置字体的粗细</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>letterSpacing</code><p>设置字符间距</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>lineHeight</code><p>设置行间距</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>quotes</code><p>设置在文本中使用哪种引号</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>textAlign</code><p>排列文本</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>textDecoration</code><p>设置文本的修饰</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>textIndent</code><p>缩紧首行的文本</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>textShadow</code><p>设置文本的阴影效果</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>textTransform</code><p>对文本设置大写效果</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>unicodeBidi</code><p>&nbsp;</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>whiteSpace</code><p>设置如何设置文本中的折行和空白符</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>wordSpacing</code><p>设置文本中的词间距</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  
+  <div class="row">
+    <div class="col-sm-4"><h3>标准属性</h3></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>dir</code><p>设置或返回文本的方向</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>lang</code><p>设置或返回元素的语言代码</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>title</code><p>设置或返回元素的咨询性的标题</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>cssText </code></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>关于 CSS2Properties 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>相关页面</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM Table 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Table 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Table 对象集合</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>cells[]</code><p>返回包含表格中所有单元格的一个数组。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>rows[]</code><p>返回包含表格中所有行的一个数组。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>tBodies[]</code><p>返回包含表格中所有 tbody 的一个数组。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Table 对象属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>align</code><p>表在文档中的水平对齐方式。（已废弃）</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>bgColor</code><p>表的背景颜色。（已废弃）</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border</code><p>设置或返回表格边框的宽度。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>caption</code><p>对表格的 &lt;caption&gt; 元素的引用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>cellPadding</code><p>设置或返回单元格内容和单元格边框之间的空白量。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>cellSpacing</code><p>设置或返回在表格中的单元格之间的空白量。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>frame</code><p>设置或返回表格的外部边框。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>id</code><p>设置或返回表格的 id。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>rules</code><p>设置或返回表格的内部边框（行线）。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>summary</code><p>设置或返回对表格的描述（概述）。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>tFoot</code><p>返回表格的 TFoot 对象。如果不存在该元素，则为 null。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>tHead</code><p>返回表格的 THead 对象。如果不存在该元素，则为 null。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>width</code><p>设置或返回表格的宽度。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  
+  <div class="row">
+    <div class="col-sm-12"><h2>标准属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>className</code><p>设置或返回元素的 class 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>dir</code><p>设置或返回文本的方向。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>lang</code><p>设置或返回元素的语言代码。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>title</code><p>设置或返回元素的 title 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Table 对象方法</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>createCaption()</code><p>为表格创建一个 caption 元素。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>createTFoot()</code><p>在表格中创建一个空的 tFoot 元素。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>createTHead()</code><p>在表格中创建一个空的 tHead 元素。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>deleteCaption()</code><p>从表格删除 caption 元素以及其内容。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>deleteRow()</code><p>从表格删除一行。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>deleteTFoot()</code><p>从表格删除 tFoot 元素及其内容。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>deleteTHead()</code><p>从表格删除 tHead 元素及其内容。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>insertRow()</code><p>在表格中插入一个新行。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM TableCell 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>TableCell 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>TableCell 对象属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>abbr</code><p>设置或返回单元格中内容的缩写版本。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>align</code><p>设置或返回单元格内部数据的水平排列方式。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>axis</code><p>设置或返回相关单元格的一个逗号分隔的列表。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>cellIndex</code><p>返回单元格在某行的单元格集合中的位置。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>ch</code><p>设置或返回单元格的对齐字符。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>chOff</code><p>设置或返回单元格的对齐字符的偏移量。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>colSpan</code><p>单元格横跨的列数。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>headers</code><p>设置或返回 header-cell 的 id 值。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>id</code><p>设置或返回单元格的 id。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>innerHTML</code><p>设置或返回单元格的开始标签和结束标签之间的 HTML。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>rowSpan</code><p>设置或返回单元格可横跨的行数。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>scope</code><p>设置或返回此单元格是否可提供标签信息。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>vAlign</code><p>设置或返回表格单元格内数据的垂直排列方式。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>width</code><p>设置或返回单元格的宽度。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>标准属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>className</code><p>设置或返回元素的 class 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>dir</code><p>设置或返回文本的方向。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>lang</code><p>设置或返回元素的语言代码。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>title</code><p>设置或返回元素的 title 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM TableRow 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>TableRow 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>TableRow 对象集合</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>cells[]</code><p>返回包含行中所有单元格的一个数组。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  
+  <div class="row">
+    <div class="col-sm-12"><h2>TableRow 对象属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>align</code><p>设置或返回在行中数据的水平排列。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>ch</code><p>设置或返回在行中单元格的对齐字符。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>chOff</code><p>设置或返回在行中单元格的对齐字符的偏移量。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>id</code><p>设置或返回行的 id。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>innerHTML</code><p>设置或返回行的开始标签和结束标签之间的 HTML。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>rowIndex</code><p>返回该行在表中的位置。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>sectionRowIndex</code><p>返回在 tBody 、tHead 或 tFoot 中，行的位置。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>vAlign</code><p>设置或返回在行中的数据的垂直排列方式。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>TableRow 对象方法</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>deleteCell()</code><p>删除行中的指定的单元格。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>insertCell()</code><p>在一行中的指定位置插入一个空的 &lt;td&gt; 元素。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1>HTML DOM Textarea 对象</h1></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Textarea 对象</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Textarea Object Properties</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>accessKey</code><p>设置或返回访问 textarea 的键盘快捷键。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>cols</code><p>设置或返回 textarea 的宽度。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>defaultValue</code><p>设置或返回文本框中的初始内容。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>disabled</code><p>设置或返回 textarea 是否应当被禁用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>form</code><p>返回对包含该 textarea 的表单对象的引用。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>id</code><p>设置或返回某个 textarea 的 id。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>name</code><p>设置或返回 textarea 的名称。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>readOnly</code><p>设置或返回 textarea 是否应当是只读的。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>rows</code><p>设置或返回 textarea 的高度。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>tabIndex</code><p>设置或返回 textarea 的 tab 键控制次序。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>type</code><p>返回该文本框的表单类型。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>value</code><p>设置或返回在 textarea 中的文本。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  
+  <div class="row">
+    <div class="col-sm-12"><h2>标准属性</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>className</code><p>设置或返回元素的 class 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>dir</code><p>设置或返回文本的方向。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>lang</code><p>设置或返回元素的语言代码。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>title</code><p>设置或返回元素的 title 属性。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Textarea 对象方法</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>blur()</code><p>从 textarea 移开焦点。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>focus()</code><p>在 textarea 上设置焦点。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"><code>select()</code><p>选择 textarea 中的文本。</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h2>Textarea 对象事件句柄</h2></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4"><code>onchange</code><p>当输入值改变时调用的事件句柄</p></div>
+    <div class="col-sm-8"><p></p></div>
+    </div>
+</div>

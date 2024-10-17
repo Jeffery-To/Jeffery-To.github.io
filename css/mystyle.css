@@ -1,0 +1,75 @@
+/*mystyle.css*/
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+    font-size: 1.6rem;
+}
+.col-sm-12 {
+	background-color: #dfe1e8;
+	padding: 4rem;
+}
+.col-sm-4 {
+	padding: 2rem 5rem;
+	line-height: 2rem;
+}
+.col-sm-8 {
+	padding: 2rem 2rem 2rem 7rem;
+	background-color: #f7f7f9;
+	margin-bottom: -999px;
+    padding-bottom: 999px;
+}
+.row {
+	border-bottom: 1px solid #dfe1e8;
+	overflow: hidden;
+}
+pre {
+	color:#E34A22;
+	border:none;
+	background: none;
+}
+code {
+	background: none;
+}
+img {
+	margin-left: 0.2rem;
+}
+.navbar {
+	margin:0;
+}
+.navbar-inverse {
+	background-color: #2a3440;
+}
+footer {
+	background-color: #101010;
+	color: #eee;
+	text-align: center;
+	padding: 3rem 0rem 5rem;
+}
+footer a,footer a:hover,footer a:visited,footer a:active,footer a:link {
+	color: #eee;
+	text-decoration: none;
+}
+footer a+a {
+	border-left: 2px solid #eee;
+	padding-left: 5px;
+}
+.wiki-list {
+	position: fixed;
+	top: 5rem;
+	right: 0rem;
+	bottom: 0rem;
+	z-index: 1;
+	font-size: 1rem;
+	overflow: auto;
+}
+#list::-webkit-scrollbar {
+	width:0;
+}
+
+mark {
+	font-size: 1rem;
+}
+.white {
+	text-align: center;
+	padding: 5rem;
+	background-color: #fff;
+}

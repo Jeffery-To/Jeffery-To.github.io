@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WIKI HTML</title>
+    <link rel="shortcut icon" href="../pic/favicon.ico" type="image/x-icon" />
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="../css/mystyle.css">
+  </head>
+  <body>
+
+	<nav class="navbar navbar-inverse" role="navigation">
+  		<div class="container-fluid">
+    		<!-- Brand and toggle get grouped for better mobile display -->
+    		<div class="navbar-header">
+      			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        			<span class="sr-only">Toggle navigation</span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+     			</button>
+   	   			<a class="navbar-brand" href="../index.html"><span class="glyphicon glyphicon-home"><span></a>
+   			</div>
+
+   	 		<!-- Collect the nav links, forms, and other content for toggling -->
+    		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+            <li class="active"><a href="#">HTML</a></li>
+            <li><a href="./wiki_css.html">CSS</a></li>
+            <li><a href="./wiki_js.html">JAVASCRIPT</a></li>
+            <li><a href="./wiki_jquery.html">JQUERY</a></li>
+            <li><a href="./wiki_bootstrap.html">BOOTSTRAP</a></li>
+            <li><a href="./wiki_others.html">OTHERS</a></li>
+            </ul>
+    		</div><!-- /.navbar-collapse -->
+  		</div><!-- /.container-fluid -->
+	</nav>
+
+	<div id="list" class="wiki-list">
+		<button class="btn btn-xs pull-left">目<br />录</button>
+	    <div class="list-group pull-left">
+	        <a href="#html1" class="list-group-item">基础</a>
+	        <a href="#html2" class="list-group-item">格式</a>
+	        <a href="#html3" class="list-group-item">表单</a>
+	        <a href="#html4" class="list-group-item">框架</a>
+	        <a href="#html5" class="list-group-item">图像</a>
+	        <a href="#html6" class="list-group-item">音频/视频</a>
+	        <a href="#html7" class="list-group-item">链接</a>
+	        <a href="#html8" class="list-group-item">列表</a>
+	        <a href="#html9" class="list-group-item">表格</a>
+	        <a href="#html10" class="list-group-item">样式/节</a>
+	        <a href="#html11" class="list-group-item">元信息</a>
+	        <a href="#html12" class="list-group-item">编程</a>
+	        <a href="#html13" class="list-group-item">附录</a>
+	    </div>
+    </div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12 white"><h1>HTML 标签</h1></div>
+	</div>
+	<div class="row">
+		<div id="html1" class="col-sm-12"><h2>基础</h2></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;!DOCTYPE&gt;</code><p>定义文档类型</p></div>
+		<div class="col-sm-8">
+			<p>常用的声明：<br />HTML5<br /><code>&lt;!DOCTYPE html&gt;</code><br />
+			HTML 4.01<br /><code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</code><br />
+			XHTML 1.0<br /><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</code></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;html&gt;</code><p>定义 HTML 文档</p></div>
+		<div class="col-sm-8">
+			<p>Manifest属性：<img src="../pic/html5.png" alt="html5" /><br />定义一个 URL，在这个 URL 上描述了文档的缓存信息。<br />
+			<code>&lt;html  manifest="demo.appcache"&gt;<br />...<br />&lt;/html&gt;</code></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;title&gt;</code><p>定义文档的标题</p></div>
+		<div class="col-sm-8"><p><code>&lt;title&gt;...&lt;/title&gt;</code></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;body&gt;</code><p>定义文档的主体</p></div>
+		<div class="col-sm-8"><p><code>&lt;body&gt;<br />...<br />&lt;/body&gt;</code></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;h1&gt; to &lt;h6&gt;</code><p>定义 HTML 标题</p></div>
+		<div class="col-sm-8"><p><code>&lt;hx&gt;...&lt;/hx&gt;</code></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;p&gt;</code><p>定义段落</p></div>
+		<div class="col-sm-8"><p><code>&lt;p&gt;<br />...<br />&lt;/p&gt;</code></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;br /&gt;</code><p>定义简单的折行</p></div>
+		<div class="col-sm-8"><p>注：请使用<code>&lt;br /&gt;</code>来输入空行，而不是分割段落。</p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;hr /&gt;</code><p>定义水平线</p></div>
+		<div class="col-sm-8"><p>水平分隔线可以在视觉上将文档分隔成各个部分。<hr /></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;!--...--&gt;</code><p>定义注释</p></div>
+		<div class="col-sm-8"><p><code>&lt;!--这是一段注释。注释不会在浏览器中显示。--&gt;</code></p></div>
+	</div>
+
+	<div class="row">
+		<div id="html2" class="col-sm-12"><h2>格式</h2></div>
+	</div>
+	<!--引用格式标签-->
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;q&gt;</code><p>短文本引用</p></div>
+		<div class="col-sm-8"><p><code>&lt;q&gt;...&lt;/q&gt;</code></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;blockquote&gt;</code><p>长文本引用</p></div>
+		<div class="col-sm-8"><p>浏览器对此标签的解析是缩进样式</p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;cite&gt;</code><p>定义引用(citation)</p></div>
+		<div class="col-sm-8"><p><cite>可使用该标签对参考文献的引用进行定义，比如书籍或杂志的标题。</cite></p></div>
+	</div>
+	<!--文本格式标签-->
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;strong&gt;</code><p>定义语气更为强烈的强调文本</p></div>
+		<div class="col-sm-8"><p><strong>This text is strong</strong></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;b&gt;</code><p>定义粗体文本</p></div>
+		<div class="col-sm-8"><p><b>This text is bold</b></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;em&gt;</code><p>需要强调的文本</p></div>
+		<div class="col-sm-8"><p><em>This text is emphasized</em></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;i&gt;</code><p>定义斜体文本</p></div>
+		<div class="col-sm-8"><p><i>This text is italic</i></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;big&gt;</code><p>定义大号文本<br /><span class="bg-danger">已从 HTML5 中删除</span></p></div>
+		<div class="col-sm-8"><p><big>This text is big</big></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;small&gt;</code><p>定义小号文本</p></div>
+		<div class="col-sm-8"><p><small>This text is small</small></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;sup&gt;</code><p>定义上标文本</p></div>
+		<div class="col-sm-8"><p>This text contains <sup>superscript</sup></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;sub&gt;</code><p>定义下标文本</p></div>
+		<div class="col-sm-8"><p>This text contains <sub>subscript</sub></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;del&gt;</code><p>定义被删除文本</p></div>
+		<div class="col-sm-8"><p><del>二十</del></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;ins&gt;</code><p>定义被插入文本</p></div>
+		<div class="col-sm-8"><p><ins>十二</ins></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;bdo&gt;</code><p>定义文字方向</p></div>
+		<div class="col-sm-8"><p><code>&lt;bdo dir="rtl"&gt;Here is some Hebrew text&lt;/bdo&gt;</code><br />
+			<bdo dir="rtl">Here is some Hebrew text</bdo></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;acronym&gt;</code><p>定义只取首字母的缩写<br /><span class="bg-danger">已从 HTML5 中删除</span></p></div>
+		<div class="col-sm-8">
+			<p><code>&lt;acronym title="World Wide Web"&gt;WWW&lt;/acronym&gt;</code><br />
+			<acronym title="World Wide Web">WWW</acronym></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;abbr&gt;</code><p>定义缩写</p></div>
+		<div class="col-sm-8">
+			<p><code>&lt;p&gt;&lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; 成立于 1948 年&lt;/p&gt;</code><br />
+			<abbr title="World Health Organization">WHO</abbr> 成立于 1948 年</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;dfn&gt;</code><p>定义定义项目</p></div>
+		<div class="col-sm-8">
+			<p><code>&lt;p&gt;&lt;dfn title="World Health Organization"&gt;WHO&lt;/dfn&gt; 成立于 1948 年&lt;/p&gt;</code>
+			<dfn title="World Health Organization">WHO</dfn> 成立于 1948 年</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;address&gt;</code><p>为网页加入地址信息</p></div>
+		<div class="col-sm-8"><address>
+			Written by <a href="mailto:webmaster@example.com">Donald Duck</a>.<br /> 
+			Visit us at:<br />Example.com<br />Box 564, Disneyland<br />USA
+		</address><p></p></div>
+	</div>
+	<!--“计算机输出”标签-->
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;code&gt;</code><p>加入一行代码</p></div>
+		<div class="col-sm-8"><p><code>Computer code</code></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;pre&gt;</code><p>加入大段代码 </p></div>
+		<div class="col-sm-8"><p>pre 标签很适合显示计算机代码：</p><pre>&lt;pre&gt;
+for i = 1 to 10
+     print i
+next i
+&lt;/pre&gt;</pre><p></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;var&gt;</code><p>定义文本的变量部分</p></div>
+		<div class="col-sm-8"><p><var>Computer variable</var></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;kbd&gt;</code><p>定义键盘文本</p></div>
+		<div class="col-sm-8"><p><kbd>Keyboard input</kbd></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;samp&gt;</code><p>定义计算机代码样本</p></div>
+		<div class="col-sm-8"><p><samp>Sample text</samp></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;tt&gt;</code><p>定义打字机文本<br /><span class="bg-danger">已从 HTML5 中删除</span></p></div>
+		<div class="col-sm-8"><p><tt>Teletype text</tt></p></div>
+	</div>
+	<!--html5-->
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;mark&gt;</code><img src="../pic/html5.png" alt="html5" /> <mark>IE9+ Firefox Chrome Safari Opera</mark><p>定义有记号的文本</p></div>
+		<div class="col-sm-8"><p><mark>mark</mark></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;meter&gt;</code><img src="../pic/html5.png" alt="html5" /> <mark>Firefox Chrome Safari6+ Opera</mark><p>定义预定义范围内的度量</p></div>
+		<div class="col-sm-8">
+			<p>注释：&lt;meter&gt;标签不应用于指示进度（在进度条中）。如果标记进度条，请使用&lt;progress&gt;标签。<br />
+			<code>&lt;meter value="3" min="0" max="10"&gt;十分之三&lt;/meter&gt;<br />
+			&lt;meter value="0.6"&gt;60%&lt;/meter&gt;</code><br />
+			<meter value="3" min="0" max="10">十分之三</meter><br />
+			<meter value="0.6">60%</meter></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;progress&gt;</code><img src="../pic/html5.png" alt="html5" /> <mark>IE10+ Firefox Chrome Safari Opera</mark><p>定义任何类型的任务的进度</p></div>
+		<div class="col-sm-8"><p><code>&lt;progress value="20" max="100"&gt;&lt;/progress&gt;</code><br /><progress value="20" max="100"></progress></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;ruby&gt;</code><img src="../pic/html5.png" alt="html5" /> <mark>IE9+ Firefox Chrome Safari Opera</mark><p>定义 ruby 注释</p></div>
+		<div class="col-sm-8"><pre>&lt;ruby&gt;
+漢 &lt;rt&gt;&lt;rp&gt;(&lt;/rp&gt;ㄏㄢˋ&lt;rp&gt;)&lt;/rp&gt;&lt;/rt&gt;
+&lt;/ruby&gt;</pre><ruby> 漢 <rt><rp>(</rp> ㄏㄢˋ <rp>)</rp></rt></ruby><p></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;rp&gt;</code><img src="../pic/html5.png" alt="html5" /> <mark>IE9+ Firefox Chrome Safari Opera</mark><p>定义若浏览器不支持 ruby 元素显示的内容</p></div>
+		<div class="col-sm-8"><p><code>&lt;rp&gt;...&lt;/rp&gt;</code></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;rt&gt;</code><img src="../pic/html5.png" alt="html5" /> <mark>IE9+ Firefox Chrome Safari Opera</mark><p>定义 ruby 注释的解释</p></div>
+		<div class="col-sm-8"><p><code>&lt;rt&gt;...&lt;/rt&gt;</code></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;bdi&gt;</code><img src="../pic/html5.png" alt="html5" /> <mark>Firefox Chrome</mark><p>定义文本的文本方向，使其脱离其周围文本的方向设置</p></div>
+		<div class="col-sm-8"><p>在发布用户评论或其他您无法完全控制的内容时，该标签很有用。</p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;time&gt;</code><img src="../pic/html5.png" alt="html5" /><p>定义日期/时间</p></div>
+		<div class="col-sm-8"><p>目前所有主流浏览器都不支持<code>&lt;time&gt;</code>标签。<br />
+			<code>&lt;time&gt;9:00&lt;/time&gt;</code><br />
+			<code>&lt;time datetime="2008-02-14"&gt;情人节&lt;/time&gt;</code></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;wbr&gt;</code><img src="../pic/html5.png" alt="html5" /> <mark>Firefox Chrome Safari Opera</mark><p>规定在文本中的何处适合添加换行符</p></div>
+		<div class="col-sm-8"><p>提示：如果单词太长，或者您担心浏览器会在错误的位置换行，那么您可以使用<code>&lt;wbr&gt;</code>元素来添加 Word Break Opportunity（单词换行时机）。<br />
+		<code>&lt;p&gt;如果想学习AJAX，那么您必须熟悉XML&lt;wbr&gt;Http&lt;/wbr&gt;Request对象。&lt;/p&gt;</code></p></div>
+	</div>
+
+	<div class="row">
+		<div id="html3" class="col-sm-12"><h2>表单</h2></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;form&gt;</code><p>定义供用户输入的 HTML 表单</p></div>
+		<div class="col-sm-8"><p><code>&lt;form   method="传送方式"   action="服务器文件"&gt;</code><br />
+			GET（默认方法）：<br />
+			如果表单提交是被动的（比如搜索引擎查询），并且没有敏感信息。<br />
+			当您使用 GET 时，表单数据在页面地址栏中是可见的：<br />
+			action_page.php?firstname=Mickey&lastname=Mouse<br />
+			注释：GET 最适合少量数据的提交。浏览器会设定容量限制。<br />
+			POST：<br />
+			如果表单正在更新数据，或者包含敏感信息（例如密码）。<br />
+			POST 的安全性更加，因为在页面地址栏中被提交的数据是不可见的。</p>
+			<p><code>autocomplete</code>属性：规定表单或输入字段是否应该自动完成。<br />
+			当自动完成开启，浏览器会基于用户之前的输入值自动填写值。<code>autocomplete="yes/on"</code><br />
+			<code>novalidate</code>属性：规定在提交表单时不对表单数据进行验证。<br />
+			<code>form</code>属性：规定元素所属的一个或多个表单。</p><pre>&lt;form action="action_page.php" id="form1"&gt;
+...
+&lt;/form&gt;
+&lt;input type="text" name="lname" form="form1" /&gt;</pre>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;input&gt;</code><p>定义输入控件</p></div>
+		<div class="col-sm-8">
+			<p><code>&lt;input type="text/password" name="名称" value="文本" /&gt</code><br />
+			<input type="password" name="password" /><br />
+			name：为文本框命名，以备后台程序使用<br />value：为文本输入框设置默认值(一般起到提示作用)<br />
+			<code>&lt;input type="radio/checkbox" value="值" name="名称" checked="checked" /&gt;</code><br />
+			<input type="radio" name="sex" value="male" checked="checked" />male<input type="radio" name="sex" value="female" />female<input type="checkbox" name="" value="" /><br />
+			value：提交数据到服务器的值<br />name：为控件命名，以备后台程序使用 注意:同一组的单选按钮，name 取值一定要一致<br />
+			<code>&lt;input   type="submit"   value="提交" /&gt;</code><br />
+			<code>&lt;input type="reset" value="重置" /&gt;</code><br />
+			<code>&lt;input type="hidden" /&gt;</code>隐藏
+			<input type="submit" value="Submit"></p>
+			<p>HTML5 输入类型：<br /><code>number date color range month week time datetime datetime-local email search tel url</code><br />
+			<input type="number" name="points" min="0" max="100" step="10" value="30" /><code>&lt;input type="number" name="points" min="0" max="100" step="10" value="30" /&gt;</code> 用于应该包含数字值的输入字段。<br />
+			<input type="date" name="bday" max="1979-12-31" min="2000-01-02" /><code>&lt;input type="date" name="bday" max="1979-12-31" min="2000-01-02" /&gt; </code>用于应该包含日期的输入字段。<br />
+			<input type="color" name="favcolor" value="#ff0000" /><code>&lt;input type="color" name="favcolor" value="#ff0000" /&gt;</code> 用于应该包含颜色的输入字段。<br />
+			<input type="range" name="points" min="0" max="10" /><code>&lt;input type="range" name="points" min="0" max="10" /&gt; </code>用于应该包含一定范围内的值的输入字段。<br />
+			<input type="month" name="bdaymonth" /><code>&lt;input type="month" name="bdaymonth" /&gt;</code> 允许用户选择月份和年份。<br />
+			<input type="week" name="year_week" /><code>&lt;input type="week" name="year_week" /&gt;</code>允许用户选择周和年<br />
+			<input type="time" name="usr_time" /><code>input type="time" name="usr_time" /&gt;</code>允许用户选择时间（无时区）。<br />
+			<input type="datetime" name="bdaytime" /><code>&lt;input type="datetime" name="bdaytime" /&gt;</code> 允许用户选择日期和时间（有时区）。<br />
+			<input type="datetime-local" name="bdaytime" /><code>&lt;input type="datetime-local" name="bdaytime" /&gt;</code>允许用户选择日期和时间（无时区）。</p>
+			<form><input type="email" name="email" value="null" /><input type="submit" /></form>
+			<p><code>&lt;input type="email" name="email" /&gt;</code>用于应该包含电子邮件地址的输入字段。根据浏览器支持，能够在被提交时自动对电子邮件地址进行验证。<br />
+			<code>&lt;input type="search" /&gt;</code>用于搜索字段（搜索字段的表现类似常规文本字段）。<br />
+			<code>&lt;input type="tel" /&gt;</code>用于应该包含电话号码的输入字段。<br />
+			<code>&lt;input type="url" /&gt;</code>用于应该包含 URL 地址的输入字段。根据浏览器支持，在提交时能够自动验证 url 字段。<br />
+			<input type="file" name="img" multiple /><code>&lt;input type="file" name="img" multiple /&gt;</code>用于提交文件<br /></p>
+			<p><code>value</code>属性：规定输入字段的初始值。<br />
+			<code>readonly</code>属性：规定输入字段为只读（不能修改）。<code>readonly</code>属性不需要值。它等同于<code>readonly="readonly"</code>。<br />
+			<code>disabled</code>属性：规定输入字段是禁用的。被禁用的元素是不可用，不可点击，不会被提交。<code>disabled</code> 属性不需要值。它等同于 <code>disabled="disabled"</code>。<br />
+			<code>required</code>属性规定文本区域是必填的。<code>required="required"</code><br />
+			<code>size</code>属性：规定输入字段的尺寸（以字符计）。<br />
+			<code>maxlength</code>属性：规定输入字段允许的最大长度。<br />
+			<code>height width</code>属性：规定元素的高度和宽度。<br />
+			<code>list</code>属性：引用的<code>&lt;datalist&gt;</code>元素中包含了<code>&lt;input&gt;</code>元素的预定义选项。<br />
+			<code>min max</code>属性：规定<code>&lt;input&gt;</code>元素的最小值和最大值。<br />
+			<code>multiple</code>属性：<code>&lt;multiple&gt;</code>属性是布尔属性。如果设置，则规定允许用户在<code>&lt;input&gt;</code> 元素中输入一个以上的值。<br />
+			<code>step</code>属性：规定<code>&lt;input&gt;</code>元素的合法数字间隔。示例：如果 step="3"，则合法数字应该是 -3、0、3、6、等等。<input type="number" name="points" step="3">
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;label&gt;</code><p>定义 input 元素的标注</p></div>
+		<div class="col-sm-8"><p><code>&lt;label for="控件id名称"&gt;...&lt;/label&gt;</code></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;textarea&gt;</code><p>定义多行的文本输入控件</p></div>
+		<div class="col-sm-8"><code>&lt;textarea  name="Comment" rows="行数" cols="列数"&gt;文本&lt;/textarea&gt;</code><p>注意这两个属性可用css样式的width和height来代替：col用width、row用height来代替<br />
+		<textarea name="Comment">文本</textarea></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;button&gt;</code><p>定义按钮</p></div>
+		<div class="col-sm-8"><p><code>&lt;button&gt;...&lt;/button&gt;</code><button>...</button></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;select&gt;</code><p>下拉列表框</p></div>
+		<div class="col-sm-8"><pre>&lt;select multiple="multiple"&gt;
+      &lt;option value="看书"&gt;看书&lt;/option&gt;
+      &lt;option value="旅游" selected="selected"&gt;旅游&lt;/option&gt;
+      &lt;option value="运动"&gt;运动&lt;/option&gt;
+      &lt;option value="购物"&gt;购物&lt;/option&gt;
+&lt;/select&gt;</pre><select name="cars">
+<option value="volvo">Volvo</option>
+<option value="saab">Saab</option>
+<option value="fiat">Fiat</option>
+<option value="audi">Audi</option>
+</select><br />标签中设置multiple="multiple"属性，就可以实现多选功能，进行多选时按下Ctrl键同时进行单击<p></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;option&gt;</code><p>定义选择列表中的选项</p></div>
+		<div class="col-sm-8"><p><code>&lt;option&gt;...&lt;/option&gt;</code></p></div>
+	</div>
+	<div class="row"> 
+		<div class="col-sm-4"><code>&lt;optgroup&gt;</code><p>定义选择列表中相关选项的组合</p></div>
+		<div class="col-sm-8"><pre>&lt;select&gt;
+  &lt;optgroup label="Swedish Cars"&gt;
+    &lt;option value ="volvo"&gt;Volvo&lt;/option&gt;
+    &lt;option value ="saab"&gt;Saab&lt;/option&gt;
+  &lt;/optgroup&gt;
+&lt;/select&gt;</pre>
+			<select>
+  <optgroup label="Swedish Cars">
+    <option value ="volvo">Volvo</option>
+    <option value ="saab">Saab</option>
+  </optgroup>
+  <optgroup label="German Cars">
+    <option value ="mercedes">Mercedes</option>
+    <option value ="audi">Audi</option>
+  </optgroup>
+</select><p></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;fieldset&gt;</code><p>定义围绕表单中元素的边框</p></div>
+		<div class="col-sm-8"><p>标签将表单内容的一部分打包，生成一组相关表单的字段。</p><pre>&lt;fieldset&gt;
+    &lt;legend&gt;Personal information:&lt;/legend&gt;
+    &lt;input type="text" name="firstname" value="Mickey" /&gt;
+    &lt;input type="submit" value="Submit" /&gt;
+&lt;/fieldset&gt;</pre><fieldset>
+<legend>Personal information:</legend>
+<input type="text" name="firstname" value="Mickey">
+<input type="submit" value="Submit">
+</fieldset><p></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;legend&gt;</code><p>定义 fieldset 元素的标题</p></div>
+		<div class="col-sm-8"><p><code>&lt;legend&gt;Personal information:&lt;/legend&gt;</code></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;datalist&gt;</code><img src="../pic/html5.png" alt="html5" /> <mark>Firefox Chrome Opera</mark><p>定义下拉列表</p></div>
+		<div class="col-sm-8">
+			<pre>&lt;input list="browsers" name="browser" /&gt;
+&lt;datalist id="browsers"&gt;
+  &lt;option value="Internet Explorer"&gt;&lt;/option&gt;
+  &lt;option value="Firefox"&gt;&lt;/option&gt;
+&lt;/datalist&gt;</pre>
+			<input list="browsers" name="browser">
+			<datalist id="browsers">
+  				<option value="Internet Explorer"></option>
+  				<option value="Firefox"></option>
+  				<option value="Chrome"></option>
+  				<option value="Opera"></option>
+  				<option value="Safari"></option>
+			</datalist>
+			<input type="submit"><p></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;keygen&gt;</code><img src="../pic/html5.png" alt="html5" /> <mark>Firefox Chrome Safari6+ Opera</mark><p>定义生成密钥</p></div>
+		<div class="col-sm-8"><p><code>&lt;input type="text" name="usr_name" /&gt;<br />&lt;keygen name="security" /&gt;</code><br />用户名：<input type="text" name="usr_name" />加密：<keygen name="security" /></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;output&gt;</code><img src="../pic/html5.png" alt="html5" /> <mark>Firefox Chrome Safari Opera</mark><p>定义输出的一些类型</p></div>
+		<div class="col-sm-8"><pre>&lt;form oninput="x.value=parseInt(a.value)+parseInt(b.value)"&gt;
+	0&lt;input type="range" id="a" value="50" /&gt;100
+	+&lt;input type="number" id="b" value="50" /&gt;
+	=&lt;output name="x" for="a b"&gt;&lt;/output&gt;
+&lt;/form&gt;</pre>
+		<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+			<input type="range" id="a" value="50">100+<input type="number" id="b" value="50">=<output name="x" for="a b"></output>
+		</form><p></p></div>
+	</div>
+
+	<div class="row">
+		<div id="html4" class="col-sm-12"><h2>框架</h2></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;frame&gt;</code><p>定义框架集的窗口或框架<br /><span class="bg-danger">已从 HTML5 中删除</span></p></div>
+		<div class="col-sm-8"><code>&lt;frame src="page1.htm" /&gt;</code>
+			<p>提示：
+假如一个框架有可见边框，用户可以拖动边框来改变它的大小。为了避免这种情况发生，可以在 <code>&lt;frame&gt; </code>标签中加入：<code>noresize="noresize"。</code></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;frameset&gt;</code><p>定义框架集<br /><span class="bg-danger">已从 HTML5 中删除</span></p></div>
+		<div class="col-sm-8"><pre>&lt;frameset cols/rows="25%,75%"&gt;
+  &lt;frame src="page1.htm" /&gt;
+  &lt;frame src="page2.htm" /&gt;
+&lt;/frameset&gt;</pre>
+		<p>重要提示：不能将 <code>&lt;body&gt;&lt;/body&gt;</code> 标签与 <code>&lt;frameset&gt;&lt;/frameset&gt; </code>标签同时使用！不过，假如你添加包含一段文本的 <code>&lt;noframes&gt;</code> 标签，就必须将这段文字嵌套于 <code>&lt;body&gt;&lt;/body&gt;</code> 标签内。</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;noframes&gt;</code><p>定义针对不支持框架的用户的替代内容<br /><span class="bg-danger">已从 HTML5 中删除</span></p></div>
+		<div class="col-sm-8"><pre>&lt;frameset cols/rows="25%,50%,25%"&gt;
+  &lt;frame src="/example/html/frame_a.html" /&gt;
+  &lt;frame src="/example/html/frame_b.html" /&gt;
+  &lt;frame src="/example/html/frame_c.html" /&gt;
+&lt;noframes&gt;
+&lt;body&gt;您的浏览器无法处理框架！&lt;/body&gt;
+&lt;/noframes&gt;
+&lt;/frameset&gt;
+&lt;/html&gt;</pre></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;iframe&gt;</code><p>定义内联框架<br />用于在网页内显示网页</p></div>
+		<div class="col-sm-8">
+			<p><code>&lt;iframe src="demo_iframe.htm" frameborder="0" width="200" height="200"&gt;&lt;/iframe&gt;</code><br />
+			<code>frameborder</code> 属性规定是否显示<code>iframe</code> 周围的边框<br />
+			<code>scrolling</code> 属性规定是否在<code>iframe</code>中显示滚动条。<code>scrolling="yes/no/auto"</code></p>
+			<iframe src="http://www.idulx.top/wiki/html/" name="iframe_a"></iframe>
+			<p><a href="http://www.idulx.top/" target="iframe_a">Iframe Demo</a></p>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div id="html5" class="col-sm-12"><h2>图像</h2></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;img&gt;</code><p>定义图像</p></div>
+		<div class="col-sm-8"><p><code>&lt;img src="myimage.gif" alt="My Image" title="My Image" width="104" height="142" /&gt;</code></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;map&gt;</code><p>定义图像映射</p></div>
+		<div class="col-sm-8"><pre>&lt;img src="planets.jpg" border="0" usemap="#planetmap" alt="Planets" /&gt;
+&lt;map name="planetmap" id="planetmap"&gt;
+  &lt;area shape="circle" coords="180,139,14" href ="venus.html" alt="Venus" /&gt;
+  &lt;area shape="circle" coords="129,161,10" href ="mercur.html" alt="Mercury" /&gt;
+  &lt;area shape="rect" coords="0,0,110,260" href ="sun.html" alt="Sun" /&gt;
+&lt;/map&gt;</pre></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;area&gt;</code><p>定义图像地图内部的区域</p></div>
+		<div class="col-sm-8"><p><code>&lt;area shape="circle" coords="180,139,14" href ="venus.html" alt="Venus" /&gt;</code></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;canvas&gt;</code><img src="../pic/html5.png" alt="html5" /> <mark>IE9+ Firefox Chrome Safari Opera</mark><p>定义图形</p></div>
+		<div class="col-sm-8">
+			<p><code>&lt;canvas&gt;</code>标签只是图形容器，您必须使用脚本来绘制图形。</p><pre>&lt;canvas id="myCanvas"&gt;your browser does not support the canvas tag&lt;/canvas&gt;
+&lt;script type="text/javascript"&gt;
+var canvas=document.getElementById('myCanvas');
+var ctx=canvas.getContext('2d');
+ctx.fillStyle='#FF0000';
+ctx.fillRect(0,0,80,100);
+&lt;/script&gt;</pre></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;figure&gt;</code><img src="../pic/html5.png" alt="html5" /> <mark>IE9+ Firefox Chrome Safari Opera</mark><p>定义媒介内容（图像、图表、照片、代码等）的分组，以及它们的标题，一般图片和标题能够被组合在&lt;figure&gt;元素中：</p></div>
+		<div class="col-sm-8"><pre>&lt;figure&gt;
+   &lt;img src="demo.jpg" alt="" /&gt;
+   &lt;figcaption>Fig1. - The Pulpit Pock, Norway.&lt;/figcaption&gt;
+&lt;/figure&gt;</pre></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;figcaption&gt;</code><img src="../pic/html5.png" alt="html5" /> <mark>IE9+ Firefox Chrome Safari Opera</mark><p>定义 figure 元素的标题</p></div>
+		<div class="col-sm-8"><p><code>&lt;figcaption&gt;...&lt;/figcaption&gt;</code></p></div>
+	</div>
+
+	<div class="row">
+		<div id="html6" class="col-sm-12"><h2>音频/视频</h2></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;audio&gt;</code><img src="../pic/html5.png" alt="html5" /> <mark>IE9+ Firefox Chrome Safari Opera</mark><p>定义声音内容</p></div>
+		<div class="col-sm-8"><pre>&lt;audio src="demo.ogg" controls="controls"&gt;您的浏览器不支持 audio 标签。&lt;/audio&gt;</pre><audio src="http://www.w3school.com.cn/i/horse.ogg" controls="controls">您的浏览器不支持 audio 标签。</audio><p></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;source&gt;</code><img src="../pic/html5.png" alt="html5" /> <mark>IE9+ Firefox Chrome Safari Opera</mark><p>定义媒介源</p></div>
+		<div class="col-sm-8">
+			<pre>&lt;audio controls="controls"&gt;
+    &lt;source src="demo.ogg" type="audio/ogg" /&gt;
+    &lt;source src="demo.mp3" type="audio/mpeg" /&gt;
+    Your browser does not support the audio element.
+&lt;/audio&gt;</pre>
+			<audio controls="controls">
+				<source src="demo.ogg" type="audio/ogg" />
+				<source src="demo.mp3" type="audio/mpeg" />
+				Your browser does not support the audio element.
+			</audio><p></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;track&gt;</code><img src="../pic/html5.png" alt="html5" /> <mark>IE10+ Chrome Opera</mark><p>定义用在媒体播放器中的文本轨道</p></div>
+		<div class="col-sm-8"><p>目前所有主流浏览器都不支持<br />
+		播放带有字幕的视频：<code>&lt;track&gt;</code>标签。</p>
+			<pre>&lt;video width="320" height="240" controls="controls"&gt;
+    &lt;source src="forrest_gump.mp4" type="video/mp4" /&gt;
+    &lt;source src="forrest_gump.ogg" type="video/ogg" /&gt;
+    &lt;track kind="subtitles" src="subs_chi.srt" srclang="zh" label="Chinese" /&gt;
+    &lt;track kind="subtitles" src="subs_eng.srt" srclang="en" label="English" /&gt;
+&lt;/video&gt;</pre>
+			<video width="320" height="240" controls="controls">
+  				<source src="forrest_gump.mp4" type="video/mp4" />
+  				<source src="forrest_gump.ogg" type="video/ogg" />
+  				<track kind="subtitles" src="subs_chi.srt" srclang="zh" label="Chinese">
+  				<track kind="subtitles" src="subs_eng.srt" srclang="en" label="English">
+			</video><p></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;video&gt;</code><img src="../pic/html5.png" alt="html5" /> <mark>IE9+ Firefox Chrome Safari Opera</mark><p>定义视频</p></div>
+		<div class="col-sm-8"><pre>&lt;video src="movie.ogg" controls="controls"&gt;您的浏览器不支持 video 标签。&lt;/video&gt;</pre>
+			<video src="http://www.w3school.com.cn/i/movie.ogg" controls="controls">您的浏览器不支持 video 标签。</video><p></p>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div id="html7" class="col-sm-12"><h2>链接</h2></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;a&gt;</code><p>链接</p></div>
+		<div class="col-sm-8">
+			<p><code>&lt;a href="http://www.demo.com/" title="message" target="_blank"&gt;click here!&lt;/a&gt;</code><br />
+			注释：请始终将正斜杠添加到子文件夹。假如这样书写链接：href="http://www.demo.com.cn/html"，就会向服务器产生两次HTTP请求。这是因为服务器会添加正斜杠到这个地址，然后创建一个新的请求，就像这样：href="http://www.demo.com.cn/html/"。</p>
+			<p>使用mailto在网页中链接Email地址<br />注意：如果mailto后面同时有多个参数的话，第一个参数必须以“?”开头，后面的参数每一个都以“&”分隔<br />
+			<code>&lt;a href="mailto:yy@zz.com?cc=aa@zz.com&bbc=bb@zz.com&subject=主题&body=邮件内容"&gt;SEND&lt;/a&gt;</code><br />
+			[收件人 mailto:][抄送地址 cc=][密件抄送地址 bcc=][多个收件人、抄送、密件抄送人 ;][邮件主题 subject=][邮件内容 body=]</p>
+			<p>命名锚的语法：<br />
+			<code>&lt;a name="label"&gt;锚（显示在页面上的文本）&lt;/a&gt;</code><br />
+			提示：您可以使用 id 属性来替代 name 属性，命名锚同样有效<br />
+			<code>&lt;a href="#tips"&gt;有用的提示&lt;/a&gt;</code><br />
+			<code>&lt;a href="http://www.w3school.com.cn/html/html_links.asp#tips"&gt;有用的提示&lt;/a&gt;</code><br />
+			提示：假如浏览器找不到已定义的命名锚，那么就会定位到文档的顶端。不会有错误发生。</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;link&gt;</code><p>定义文档与外部资源的关系</p></div>
+		<div class="col-sm-8">
+			<p><code>&lt;link rel="stylesheet" type="text/css" href="mystyle.css" /&gt;</code><br />网站显示页logo图标：<br />
+			<code>&lt;link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /&gt;</code></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;nav&gt;</code><img src="../pic/html5.png" alt="html5" /> <mark>IE9+ Firefox Chrome Safari Opera</mark><p>定义导航链接</p></div>
+		<div class="col-sm-8"><pre>&lt;nav&gt;
+&lt;a href="index.asp"&gt;Home&lt;/a&gt;
+&lt;a href="html5_meter.asp"&gt;Previous&lt;/a&gt;
+&lt;a href="html5_noscript.asp"&gt;Next&lt;/a&gt;
+&lt;/nav&gt;</pre></div>
+	</div>
+	
+	<div class="row">
+		<div id="html8" class="col-sm-12"><h2>列表</h2></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;ul&gt;</code><p>定义无序列表</p></div>
+		<div class="col-sm-8"><ul><li>First item</li><li>Next item</li></ul></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;ol&gt;</code><p>定义有序列表</p></div>
+		<div class="col-sm-8"><p>
+			<code>reversed</code>属性：规定列表顺序为降序。reversed="reversed"<br />
+			<code>start</code>属性：规定有序列表的起始值。start="number"<br />
+			<code>type</code>属性：规定在列表中使用的标记类型。type="1/A/a/I/i"</p>
+			<ol><li>First item</li><li>Next item</li></ol>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;li&gt;</code><p>定义列表的项目</p></div>
+		<div class="col-sm-8"><p><code>&lt;li&gt;...&lt;/li&gt;</code></p></div>
+	</div>
+	<div class="row"> 
+		<div class="col-sm-4"><code>&lt;dl&gt;</code><p>定义定义列表</p></div>
+		<div class="col-sm-8"><pre>&lt;dl&gt;
+    &lt;dt&gt;First term&lt;/dt&gt;
+    &lt;dd&gt;Definition&lt;/dd&gt;
+    &lt;dt&gt;Next term&lt;/dt&gt;
+    &lt;dd&gt;Definition&lt;/dd&gt;
+&lt;/dl&gt;</pre>
+<dl><dt>First term</dt><dd>Definition</dd><dt>Next term</dt><dd>Definition</dd></dl></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;dt&gt;</code><p>定义定义列表中的项目</p></div>
+		<div class="col-sm-8"><p><code>&lt;dt&gt;...&lt;/dt&gt;</code></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;dd&gt;</code><p>定义定义列表中项目</p></div>
+		<div class="col-sm-8"><p><code>&lt;dd&gt;...&lt;/dd&gt;</code></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;menuitem&gt;</code><p>定义用户可以从弹出菜单调用的命令/菜单项目</p></div>
+		<div class="col-sm-8"><p>只有Firefox 8.0 以及更高的版本支持<code>&lt;menuitem&gt;</code>标签。</p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;command&gt;</code><img src="../pic/html5.png" alt="html5" /><p>定义命令按钮</p></div>
+		<div class="col-sm-8"><p>没有浏览器支持<code>&lt;command&gt;</code>标签。</p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;menu&gt;</code><p>定义命令的菜单/列表</p></div>
+		<div class="col-sm-8"><p>没有浏览器支持<code>&lt;menu&gt;</code>标签。</p></div>
+	</div>
+	
+	<div class="row">
+		<div id="html9" class="col-sm-12"><h2>表格</h2></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;table&gt;</code><p>定义表格</p></div>
+		<div class="col-sm-8">
+			<pre>&lt;table border="1"&gt;
+&lt;tr&gt;
+  &lt;th&gt;someheader&lt;/th&gt;
+  &lt;th&gt;someheader&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;sometext&lt;/td&gt;
+  &lt;td&gt;sometext&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</pre>
+			<table class="table table-bordered">
+				<tr>
+  					<th>someheader</th>
+  					<th>someheader</th>
+				</tr>
+				<tr>
+  					<td>sometext</td>
+  					<td>sometext</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;caption&gt;</code><p>定义表格标题</p></div>
+		<div class="col-sm-8"><p>为表格添加标题和摘要：</p><pre>&lt;table summary="表格简介文本"&gt;
+    &lt;caption&gt;标题文本&lt;/caption&gt;
+    &lt;tr&gt;
+        &lt;td&gt;…&lt;/td&gt;
+        &lt;td&gt;…&lt;/td&gt;
+        …
+    &lt;/tr&gt;
+…
+&lt;/table&gt;</pre></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;th&gt;</code><p>定义表格中的表头单元格</p></div>
+		<div class="col-sm-8"><p>文本默认为粗体并且居中显示</p>
+			<p><code>colspan/rowspan</code>属性：横跨单元格</p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;tr&gt;</code><p>定义表格中的行</p></div>
+		<div class="col-sm-8"><p><code>&lt;tr&gt;...&lt;/tr&gt;</code></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;td&gt;</code><p>定义表格中的单元</p></div>
+		<div class="col-sm-8"><p><code>&lt;td&gt;...&lt;/td&gt;</code></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;thead&gt;</code><p>定义表格中的表头内容</p></div>
+		<div class="col-sm-8"><p>注释：如果您使用 thead、tfoot 以及 tbody 元素，您就必须使用全部的元素。它们的出现次序是：thead、tfoot、tbody，这样浏览器就可以在收到所有数据前呈现页脚了。</p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;tbody&gt;</code><p>定义表格中的主体内容</p></div>
+		<div class="col-sm-8"><p>当表格内容非常多时，表格会下载一点显示一点，加上标签后，这个表格就要等表格内容全部下载完才会显示。</p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;tfoot&gt;</code><p>定义表格中的表注内容（脚注）</p></div>
+		<div class="col-sm-8"><p>注释：<code>&lt;thead&gt;</code>、<code>&lt;tbody&gt;</code>以及<code>&lt;tfoot&gt;</code>很少被使用，这是因为糟糕的浏览器支持。</p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;col&gt;</code><p>定义表格中一个或多个列的属性值</p></div>
+		<div class="col-sm-8"><p>例：<code>&lt;col&gt;</code>元素为表格中的三个列规定了不同的对齐方式</p>
+<pre>&lt;table width="100%" border="1"&gt;
+  &lt;col align="left" /&gt;
+  &lt;col align="left" /&gt;
+  &lt;col align="right" /&gt;
+  &lt;tr&gt;
+    &lt;th>ISBN&lt;/th&gt;
+    &lt;th>Title&lt;/th&gt;
+    &lt;th>Price&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td>3476896&lt;/td&gt;
+    &lt;td>My first HTML&lt;/td&gt;
+    &lt;td>$53&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</pre></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;colgroup&gt;</code><p>定义表格中供格式化的列组</p></div>
+		<div class="col-sm-8"><p>例：两个<code>&lt;colgroup&gt;</code>元素为表格中的三列规定了不同的对齐方式和样式（注意第一个 colgroup 元素横跨两列）</p>
+<pre>&lt;table width="100%" border="1"&gt;
+  &lt;colgroup span="2" align="left"&gt;&lt;/colgroup&gt;
+  &lt;colgroup align="right" style="color:#0000FF;"&gt;&lt;/colgroup&gt;
+  &lt;tr&gt;
+    &lt;th&gt;ISBN&lt;/th&gt;
+    &lt;th&gt;Title&lt;/th&gt;
+    &lt;th&gt;Price&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3476896&lt;/td&gt;
+    &lt;td&gt;My first HTML&lt;/td&gt;
+    &lt;td&gt;$53&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</pre>
+		</div>
+	</div>
+
+	<div class="row">
+		<div id="html10" class="col-sm-12"><h2>样式/节</h2></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;style&gt;</code><p>定义文档的样式信息</p></div>
+		<div class="col-sm-8">
+			<p>内部样式表</p>
+			<pre>&lt;head&gt;
+    &lt;style type="text/css"&gt;
+    body {background-color: red}
+    p {margin-left: 20px}
+    &lt;/style&gt;
+&lt;/head&gt;</pre>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;div&gt;</code><p>定义文档中的节</p></div>
+		<div class="col-sm-8"><p>块级元素,可用于组合其他 HTML 元素的容器</p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;span&gt;</code><p>定义文档中的节</p></div>
+		<div class="col-sm-8"><p>标签是没有语义的，它的作用就是为了设置单独的样式用的内联元素，可用作文本的容器</p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;section&gt;</code><img src="../pic/html5.png" alt="html5" /> <mark>IE9+ Firefox Chrome Safari Opera</mark><p>定义 section。表示页面中的一个内容区块，比如章节、页眉、页脚或页面的其他部分。可以和h1、h2...等标签结合起来使用，表示文档结构</p></div>
+		<div class="col-sm-8"><pre>&lt;section&gt;
+   &lt;h1&gt;WWF&lt;/h1&gt;
+   &lt;p&gt;The World Wide Fund for Nature (WWF) is....&lt;/p&gt;
+&lt;/section&gt;</pre></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;header&gt;</code><img src="../pic/html5.png" alt="html5" /> <mark>IE9+ Firefox Chrome Safari Opera</mark><p>定义 section 或 page 的页眉</p></div>
+		<div class="col-sm-8"><p><code>&lt;header&gt;...&lt;/header&gt;</code></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;footer&gt;</code><img src="../pic/html5.png" alt="html5" /> <mark>IE9+ Firefox Chrome Safari Opera</mark><p>定义 section 或 page 的页脚</p></div>
+		<div class="col-sm-8"><p><code>&lt;footer&gt;...&lt;/footer&gt;</code></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;article&gt;</code><img src="../pic/html5.png" alt="html5" /> <mark>IE9+ Firefox Chrome Safari Opera</mark><p>表示页面中一块与上下文不相关的独立内容，比如一篇文章。</p></div>
+		<div class="col-sm-8"><pre>&lt;article&gt;
+   &lt;h1&gt;What Does WWF Do?&lt;/h1&gt;
+   &lt;p&gt;WWF's mission is to stop the degradation of our planet's natural environment,
+  and build a future in which humans live in harmony with nature.&lt;/p&gt;
+&lt;/article&gt;</pre></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;aside&gt;</code><img src="../pic/html5.png" alt="html5" /> <mark>IE9+ Firefox Chrome Safari Opera</mark><p>定义页面内容之外的内容（比如侧栏）</p></div>
+		<div class="col-sm-8"><p><code>&lt;aside&gt;...&lt;/aside&gt;</code></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;details&gt;</code><img src="../pic/html5.png" alt="html5" /> <mark>Chrome Safari6+</mark><p>定义元素的细节</p></div>
+		<div class="col-sm-8"><p>只有 Chrome 以及 Safari 6 支持<code>&lt;details&gt;</code>标签。</p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;dialog&gt;</code><img src="../pic/html5.png" alt="html5" /> <mark>Chrome Safari6+</mark><p>定义对话框或窗口</p></div>
+		<div class="col-sm-8"><p>只有 Chrome 以及 Safari 6 支持<code>&lt;dialog&gt;</code>标签。</p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;summary&gt;</code><img src="../pic/html5.png" alt="html5" /> <mark>Chrome Safari6+</mark><p>为 &lt;details&gt; 元素定义可见的标题</p></div>
+		<div class="col-sm-8"><p>只有 Chrome 以及 Safari 6 支持<code>&lt;summary&gt;</code>标签。</p></div>
+	</div>
+
+	<div class="row">
+		<div id="html11" class="col-sm-12"><h2>元信息</h2></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;head&gt;</code><p>定义关于文档的信息</p></div>
+		<div class="col-sm-8"><p><code>&lt;head&gt;...&lt;/head&gt;</code></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;meta&gt;</code><p>定义关于 HTML 文档的元信息</p></div>
+		<div class="col-sm-8">
+			<p><code>&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;</code><br />
+			<code>&lt;meta name="keywords" content="HTML,ASP,PHP,SQL" /&gt;</code><br />
+			<code>&lt;meta name="Description" content="IT技能学习平台提供了丰富的移动端开发、php开发、web前端、android开发以及html5等视频教程资源公开课" /&gt;</code><br />
+			重定向用户：<br /><code>&lt;meta http-equiv="Refresh" content="5;url=http://www.w3school.com.cn" /&gt;</code></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;base&gt;</code><p>定义页面中所有链接的默认地址或默认目标</p></div>
+		<div class="col-sm-8"><p><code>&lt;base href="http://www.w3school.com.cn/images/" /&gt;</code><br /><code>&lt;base target="_blank" /&gt;</code></p></div>
+	</div>
+
+	<div class="row">
+		<div id="html12" class="col-sm-12"><h2>编程</h2></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;script&gt;</code><p>定义客户端脚本</p></div>
+		<div class="col-sm-8">
+		<pre>&lt;script type="text/javascript"&gt;
+	document.write("Hello World!");
+&lt;/script&gt;</pre></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;noscript&gt;</code><p>定义针对不支持客户端脚本的用户的替代内容</p></div>
+		<div class="col-sm-8"><p><code>&lt;noscript&gt;Your browser does not support JavaScript!&lt;/noscript&gt;</code></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;embed&gt;</code><img src="../pic/html5.png" alt="html5" /><p>为外部应用程序（非 HTML）定义容器</p></div>
+		<div class="col-sm-8"><p><code>&lt;embed&gt;</code>标签定义嵌入的内容，比如插件。<br />
+			<code>&lt;embed src="helloworld.swf" /&gt;</code></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;object&gt;</code><p>定义嵌入的对象</p></div>
+		<div class="col-sm-8"><p><code>&lt;object&gt;</code>标签用于包含对象，比如图像、音频、视频、Java applets、ActiveX、PDF 以及 Flash。</p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>&lt;param&gt;</code><p>定义对象的参数</p></div>
+		<div class="col-sm-8"><p><code>&lt;param&gt;</code>元素允许您为插入HTML文档的对象规定<code>run-time</code>设置，也就是说，此标签可为包含它的<code>&lt;object&gt;</code>标签提供参数。</p></div>
+	</div>
+
+	<div class="row">
+		<div id="html14" class="col-sm-12 white"><h2>HTML 全局属性</h2></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>accesskey</code><p>规定激活元素的快捷键。</p></div>
+		<div class="col-sm-8">
+			<p>除了 Opera,所有浏览器均支持。<br />定义和用法：
+			accesskey 属性规定激活（使元素获得焦点）元素的快捷键。<br />
+			注释：以下元素支持 accesskey 属性：a, area, button, input, label, legend 以及 textarea。<br />语法：<code>&lt;element accesskey="character"&gt;</code></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>class</code><p>规定元素的一个或多个类名（引用样式表中的类）。</p></div>
+		<div class="col-sm-8">
+			<p>注释：class 属性不能在以下 HTML 元素中使用：base, head, html, meta, param, script, style 以及 title。<br />
+			提示：可以给 HTML 元素赋予多个 class，例如：<code>&lt;span class="left_menu important"&gt;</code>。这么做可以把若干个 CSS 类合并到一个 HTML 元素。<br />
+			提示：类名不能以数字开头！只有 Internet Explorer 支持这种做法。</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>contenteditable</code><img src="../pic/html5.png" alt="html5" /> <mark>IE Firefox Chrome Safari Opera</mark><p>规定元素内容是否可编辑。</p></div>
+		<div class="col-sm-8"><p><code>&lt;element contenteditable="true|false"&gt;</code></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>contextmenu</code><img src="../pic/html5.png" alt="html5" /> <mark>Firefox</mark><p>规定元素的上下文菜单。上下文菜单在用户点击元素时显示。</p></div>
+		<div class="col-sm-8"><p>目前只有 Firefox 支持 contextmenu 属性</p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>data-*</code><img src="../pic/html5.png" alt="html5" /> <mark>IE Firefox Chrome Safari Opera</mark><p>用于存储页面或应用程序的私有定制数据。</p></div>
+		<div class="col-sm-8">
+			<p>定义和用法：<br />
+			data-* 属性用于存储页面或应用程序的私有自定义数据。<br />
+			data-* 属性赋予我们在所有 HTML 元素上嵌入自定义 data 属性的能力。<br />
+			存储的（自定义）数据能够被页面的 JavaScript 中利用，以创建更好的用户体验（不进行 Ajax 调用或服务器端数据库查询）。<br />
+			data-* 属性包括两部分：<br />
+			1.属性名不应该包含任何大写字母，并且在前缀 "data-" 之后必须有至少一个字符<br />
+			2.属性值可以是任意字符串<br />
+			注释：用户代理会完全忽略前缀为 "data-" 的自定义属性。<br />
+			语法：<code>&lt;element data-*="somevalue"&gt;</code></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>dir</code><p>规定元素中内容的文本方向。</p></div>
+		<div class="col-sm-8"><p><code>&lt;element dir="ltr|rtl"&gt;</code></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>draggable</code><img src="../pic/html5.png" alt="html5" /> <mark>IE9+ Firefox Chrome Safari Opera</mark><p>规定元素是否可拖动。</p></div>
+		<div class="col-sm-8"><p><code>&lt;element draggable="true|false|auto"&gt;</code></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>dropzone</code><img src="../pic/html5.png" alt="html5" /> <mark>none</mark><p>规定在拖动被拖动数据时是否进行复制、移动或链接。</p></div>
+		<div class="col-sm-8"><p>目前所有主流浏览器都不支持 dropzone 属性。</p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>hidden</code><img src="../pic/html5.png" alt="html5" /> <mark>IE Firefox Chrome Safari Opera</mark><p>规定元素仍未或不再相关。</p></div>
+		<div class="col-sm-8"><p><code>&lt;element hidden="hidden"&gt;</code></p></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>id</code><p>规定元素的唯一 id。</p></div>
+		<div class="col-sm-8">
+			<p>id 属性规定 HTML 元素的唯一的 id。<br />
+			id 在 HTML 文档中必须是唯一的。<br />
+			id 属性可用作链接锚（link anchor），通过 JavaScript（HTML DOM）或通过 CSS 为带有指定 id 的元素改变或添加样式。</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>lang</code><p>规定元素内容的语言。</p></div>
+		<div class="col-sm-8"><p><code>&lt;element lang="language_code"&gt;</code></p></div>
+		</div>
+	<div class="row">
+		<div class="col-sm-4"><code>spellcheck</code><img src="../pic/html5.png" alt="html5" /> <mark>IE10+ Firefox Chrome Safari Opera</mark><p>规定是否对元素进行拼写和语法检查。</p></div>
+		<div class="col-sm-8">
+			<p>定义和用法：<br />
+			spellcheck 属性规定是否对元素进行拼写和语法检查。<br />
+			可以对以下内容进行拼写检查：<br />
+			input 元素中的文本值（非密码）<br />
+			<code>&lt;textarea&gt;</code> 元素中的文本<br />
+			可编辑元素中的文本<br />
+			语法：<code>&lt;element spellcheck="true|false"&gt;</code></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>style</code><p>规定元素的行内 CSS 样式。</p></div>
+		<div class="col-sm-8">
+			<p>style 属性规定元素的行内样式<br />
+			<code>style="color:blue; text-align:center"</code></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>tabindex</code><p>规定元素的 tab 键次序。</p></div>
+		<div class="col-sm-8">
+			<p>除了 Safari，所有浏览器均支持。<br />tabindex 属性规定元素的 tab 键控制次序（当 tab 键用于导航时）。</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>title</code><p>规定有关元素的额外信息。</p></div>
+		<div class="col-sm-8">
+			<p>title 属性规定关于元素的额外信息。<br />
+			这些信息通常会在鼠标移到元素上时显示一段工具提示文本（tooltip text）。<br />
+			提示：title 属性常与 form 以及 a 元素一同使用，以提供关于输入格式和链接目标的信息。同时它也是 abbr 和 acronym 元素的必需属性。</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><code>translate</code><img src="../pic/html5.png" alt="html5" /> <mark>none</mark><p>规定是否应该翻译元素内容。</p></div>
+		<div class="col-sm-8"><p>所有主流浏览器都无法正确地支持 translate 属性。</p></div>
+	</div>
+
+	<div class="row">
+		<div id="html13" class="col-sm-12 white"><h2>附录</h2></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><p>HTML中有用的字符实体</p></div>
+		<div class="col-sm-8">
+			<table class="table table-bordered">
+				<tr><td> </td><td>空格</td><td>& nbsp ;</td></tr>
+				<tr><td>&lt;</td><td>小于号</td><td>& lt ;</td></tr>
+				<tr><td>&gt;</td><td>大于号</td><td>& gt ;</td></tr>
+				<tr><td>&</td><td>和号</td><td>& amp ;</td></tr>
+				<tr><td>"</td><td>引号</td><td>& quot ;</td></tr>
+				<tr><td>￠</td><td>分</td><td>& cent ;</td></tr>
+				<tr><td>£</td><td>镑</td><td>& pound ;</td></tr>
+				<tr><td>¥</td><td>日圆</td><td>& yen ;</td></tr>
+				<tr><td>€</td><td>欧元</td><td>& euro ;</td></tr>
+				<tr><td>§</td><td>小节</td><td>& sect ;</td></tr>
+				<tr><td>©</td><td>版权</td><td>& copy ;</td></tr>
+				<tr><td>®</td><td>注册商标</td><td>& reg ;</td></tr>
+				<tr><td>™</td><td>商标</td><td>& trade ;</td></tr>	
+			</table>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><p>HTML嵌套规则</p></div>
+		<div class="col-sm-8"><p>块状元素：hx p dt不能包含块元素<br />内联元素：不能包含块元素</p></div>
+	</div>
+
+</div>
+<!--缺少w3c中“HTML参考手册”内除标签列表外的部分内容-->
+
+	<footer class="container-fluid footer">
+      <p>Copyright © 2016 <a href="#">Dulx's Wiki</a> <a href="http://www.miitbeian.gov.cn/" target="_blank"> 皖ICP备16003624号</a></p>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery-1.11.2.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/myjs.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WIKI CSS</title>
+    <link rel="shortcut icon" href="../pic/favicon.ico" type="image/x-icon" />
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="../css/mystyle.css">
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-inverse" role="navigation">
+  		<div class="container-fluid">
+    		<!-- Brand and toggle get grouped for better mobile display -->
+    		<div class="navbar-header">
+      			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        			<span class="sr-only">Toggle navigation</span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+     			</button>
+   	   			<a class="navbar-brand" href="../index.html"><span class="glyphicon glyphicon-home"><span></a>
+   			</div>
+
+   	 		<!-- Collect the nav links, forms, and other content for toggling -->
+    		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+            <li><a href="./wiki_html.html">HTML</a></li>
+            <li class="active"><a href="#">CSS</a></li>
+            <li><a href="./wiki_js.html">JAVASCRIPT</a></li>
+            <li><a href="./wiki_jquery.html">JQUERY</a></li>
+            <li><a href="./wiki_bootstrap.html">BOOTSTRAP</a></li>
+            <li><a href="./wiki_others.html">OTHERS</a></li>
+            </ul>
+    		</div><!-- /.navbar-collapse -->
+  		</div><!-- /.container-fluid -->
+	  </nav>
+
+
+  <div id="list" class="wiki-list">
+    <button class="btn btn-xs pull-left">目<br />录</button>
+    <div class="list-group pull-left">
+      <a href="#html1" class="list-group-item">选择器</a>
+      <a href="#css-background" class="list-group-item">背景</a>
+      <a href="#css-font" class="list-group-item">字体</a>
+      <a href="#css-text" class="list-group-item">文本</a>
+      <a href="#css-list" class="list-group-item">列表</a>
+      <a href="#css-table" class="list-group-item">表格</a>
+      <a href="#css-margin" class="list-group-item">外边距</a>
+      <a href="#css-padding" class="list-group-item">内边距</a>
+      <a href="#css-border" class="list-group-item">边框和轮廓</a>
+      <a href="#css-positioning" class="list-group-item">定位</a>
+      <a href="#css-dimension" class="list-group-item">尺寸</a>
+      <a href="#css-content" class="list-group-item">内容生成</a>
+      <a href="#css-print" class="list-group-item">打印</a>
+      <a href="#css-color" class="list-group-item">颜色</a>
+      <a href="#css-box" class="list-group-item">盒（框）</a>
+      <a href="#css-flexiblebox" class="list-group-item">可伸缩框</a>
+      <a href="#css-multicolumn" class="list-group-item">多列</a>
+      <a href="#css-animation" class="list-group-item">动画</a>
+      <a href="#css-transform" class="list-group-item">2D/3D转换</a>
+      <a href="#css-transition" class="list-group-item">过渡</a>
+      <a href="#css-ui" class="list-group-item">用户界面</a>
+      <a href="#html27" class="list-group-item">附录</a>
+    </div>
+  </div>
+
+<div class="container-fluid">
+
+  <div class="row">
+    <div id="html1" class="col-sm-12 white"><h2>CSS 选择器</h2></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>.class</code><p>类选择器</p></div>
+    <div class="col-sm-8"><code>.intro</code><p>选择 class="intro" 的所有元素。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>#id</code><p>ID选择器</p></div>
+    <div class="col-sm-8"><code>#firstname</code><p>选择 id="firstname" 的所有元素。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>*</code><p>通用选择器</p></div>
+    <div class="col-sm-8"><code>*</code><p>选择所有元素。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>element</code><p>标签选择器</p></div>
+    <div class="col-sm-8"><code>p</code><p>选择所有 &lt;p&gt; 元素。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>element,element</code><p>分组选择符</p></div>
+    <div class="col-sm-8"><code>div,p</code><p>选择所有 &lt;div&gt; 元素和所有 &lt;p&gt; 元素。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>element element</code><p>包含(后代)选择器</p></div>
+    <div class="col-sm-8"><code>div p</code><p>选择 &lt;div&gt; 元素内部的所有 &lt;p&gt; 元素。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>element&gt;element</code><p>子选择器（第一代子元素）</p></div>
+    <div class="col-sm-8"><code>div&gt;p</code><p>选择父元素为 &lt;div&gt; 元素的所有 &lt;p&gt; 元素。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>element+element</code><p>相邻兄弟选择器</p></div>
+    <div class="col-sm-8"><code>div+p</code><p>选择紧接在 &lt;div&gt; 元素之后的所有 &lt;p&gt; 元素。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>[attribute]</code><p>属性选择器</p></div>
+    <div class="col-sm-8"><code>[target]</code><p>选择带有 target 属性所有元素。<br />
+      属性选择器在为不带有 class 或 id 的表单设置样式时特别有用：<code>input[type="text"]</code></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>[attribute=value]</code><p>属性和值选择器</p></div>
+    <div class="col-sm-8"><code>[target=_blank]</code><p>选择 target="_blank" 的所有元素。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>[attribute~=value]</code><p>属性和值选择器 - 多个值</p></div>
+    <div class="col-sm-8"><code>[title~=flower]</code><p>选择 title 属性包含单词 "flower" 的所有元素。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>[attribute|=value]</code><p>属性和值选择器 - 多个值</p></div>
+    <div class="col-sm-8"><code>[lang|=en]</code><p>选择 lang 属性值以 "en" 开头的所有元素。<br />
+      注释：该值必须是整个单词，比如 lang="en"，或者后面跟着连字符，比如 lang="en-us"。</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>:link</code><p>伪类选择符</p></div>
+    <div class="col-sm-8"><code>a:link</code><p>选择所有未被访问的链接。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>:visited</code><p>伪类选择符</p></div>
+    <div class="col-sm-8"><code>a:visited</code><p>选择所有已被访问的链接。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>:active</code><p>伪类选择符</p></div>
+    <div class="col-sm-8"><code>a:active</code><p>选择正在被点击的链接</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>:hover</code><p>伪类选择符</p></div>
+    <div class="col-sm-8"><code>a:hover</code><p>选择鼠标指针位于其上的链接。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>:lang(language)</code><p>伪类选择符</p></div>
+    <div class="col-sm-8"><code>p:lang(en)</code><p>选择带有以 "en" 开头的 lang 属性值的每个 &lt;p&gt; 元素。
+      <br />注释：该值必须是整个单词，即可是单独的，比如 lang="en"，也可后跟连接符，比如 lang="en-us"。</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>:focus</code><p>伪类选择符</p></div>
+    <div class="col-sm-8"><code>input:focus</code><p>选择获得焦点的 input 元素。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>:first-letter</code><p>伪元素</p></div>
+    <div class="col-sm-8"><code>p:first-letter</code><p>选择每个 &lt;p&gt; 元素的首字母。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>:first-line</code><p>伪元素</p></div>
+    <div class="col-sm-8"><code>p:first-line</code><p>选择每个 &lt;p&gt; 元素的首行。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>:before</code><p>伪元素</p></div>
+    <div class="col-sm-8"><code>p:before</code>
+      <p>在每个 &lt;p&gt; 元素的内容之前插入内容。</p>
+      <p>(未测试)利用window.getComputedStyle方法选择到伪元素，然后利用getPropertyValue方法获取对应的属性的值。</p>
+      <pre>var fontSize=window.getComputedStyle(div,'::before').getPropertyValue('font-size');//获取before伪元素的字号大小</pre>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>:after</code><p>伪元素</p></div>
+    <div class="col-sm-8"><code>p:after</code><p>在每个 &lt;p&gt; 元素的内容之后插入内容。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>element1~element2</code><mark>CSS3</mark><p>同级选择器</p></div>
+    <div class="col-sm-8"><code>p~ul</code><p>选择前面有 &lt;p&gt; 元素的所有 &lt;ul&gt; 元素。<br />
+      两种元素必须拥有相同的父元素，但是 element2 不必直接紧随 element1。</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>[attribute^=value]</code><mark>CSS3</mark><p>属性选择器</p></div>
+    <div class="col-sm-8"><code>a[src^="https"]</code><p>选择其 src 属性值以 "https" 开头的所有 &lt;a&gt; 元素。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>[attribute$=value]</code><mark>CSS3</mark><p>属性选择器</p></div>
+    <div class="col-sm-8"><code>a[src$=".pdf"]</code><p>选择其 src 属性以 ".pdf" 结尾的所有 &lt;a&gt; 元素。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>[attribute*=value]</code><mark>CSS3</mark><p>属性选择器</p></div>
+    <div class="col-sm-8"><code>a[src*="abc"]</code><p>选择其 src 属性中包含 "abc" 子串的所有 &lt;a&gt; 元素。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>:nth-child(n)</code><mark>CSS3</mark><p>结构性伪类选择器</p></div>
+    <div class="col-sm-8"><code>p:nth-child(2)</code>
+      <p>选择父元素中第2个子元素且为&lt;p&gt;的元素。</p>
+      <p>n 可以是数字、关键词或公式。<br />Odd奇数和 even偶数（第一个子元素的下标是 1）<br />公式 (an + b)例：(2n+1)</p><p>选择器用来定位某个父元素的一个或多个特定的子元素。</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>:nth-last-child(n)</code><mark>CSS3</mark><p>结构性伪类选择器</p></div>
+    <div class="col-sm-8"><code>p:nth-last-child(2)</code><p>同上，从最后一个子元素开始计数。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>:first-child</code><p>结构性伪类选择器</p></div>
+    <div class="col-sm-8"><code>p:first-child</code><p>选择属于每个块元素的首个子元素且为 &lt;p&gt; 的元素。</p><p>表示的是选择父元素的第一个子元素的元素E。简单点理解就是选择元素中的第一个子元素，记住是子元素，而不是后代元素。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>:last-child</code><mark>CSS3</mark><p>结构性伪类选择器</p></div>
+    <div class="col-sm-8"><code>p:last-child</code><p>选择属于其父元素最后一个子元素且为 &lt;p&gt; 的元素。<br />p:last-child 等同于 p:nth-last-child(1)</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>:root</code><mark>CSS3</mark><p>结构性伪类选择器</p></div>
+    <div class="col-sm-8"><code>:root</code><p>选择文档的根元素。<br />在 HTML 中，根元素始终是 html 元素。</p><p>在IE９以下还可以借助“:root”实现hack功能。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>:empty</code><mark>CSS3</mark><p>结构性伪类选择器</p></div>
+    <div class="col-sm-8"><code>p:empty</code><p>选择没有子元素的每个 &lt;p&gt; 元素（包括文本节点）。</p><p>:empty选择器表示的就是空。用来选择没有任何内容的元素，这里没有内容指的是一点内容都没有，哪怕是一个空格。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>:target</code><mark>CSS3</mark><p>结构性伪类选择器</p></div>
+    <div class="col-sm-8"><code>#news:target</code><p>选择当前活动的 #news 元素。<br />URL 带有后面跟有锚名称 #，指向文档内某个具体的元素。这个被链接的元素就是目标元素(target element)。<br />
+:target 选择器可用于选取当前活动的目标元素。</p><pre>&lt;h2&gt;&lt;a href="#brand"&gt;Brand&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="menuSection" id="brand"&gt;content for Brand&lt;/div&gt;
+.menuSection{
+  display: none;
+}
+:target{/*这里的:target就是指id="brand"的div对象*/
+  display:block;
+}</pre></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>:not(selector)</code><mark>CSS3</mark><p>结构性伪类选择器</p></div>
+    <div class="col-sm-8"><code>:not(p)</code><p>选择非 &lt;p&gt; 元素的每个元素。</p><p>:not(selector) 选择器匹配非指定元素/选择器的每个元素。<code>input:not([type="submit"])</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>:first-of-type</code><mark>CSS3</mark></div>
+    <div class="col-sm-8"><code>p:first-of-type</code>
+      <p>指定父元素中首个类型为&lt;p&gt;的元素<br />等同于 :nth-of-type(1)</p>
+      <p>“:first-of-type”选择器类似于“:first-child”选择器，不同之处就是指定了元素的类型,其主要用来定位一个父元素下的某个类型的第一个子元素。</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>:last-of-type</code><mark>CSS3</mark></div>
+    <div class="col-sm-8"><code>p:last-of-type</code><p>指定父元素的最后一个类型为&lt;p&gt;的元素<br />等同于 :nth-last-of-type(1)</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>:nth-of-type(n)</code><mark>CSS3</mark></div>
+    <div class="col-sm-8"><code>p:nth-of-type(2)</code><p>选择属于其父元素第二个类型为 &lt;p&gt; 的元素<br />“:nth-of-type(n)”选择器和“:nth-child(n)”选择器非常类似，不同的是它只计算父元素中指定的某种类型的子元素。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>:nth-last-of-type(n)</code><mark>CSS3</mark></div>
+    <div class="col-sm-8"><code>p:nth-last-of-type(2)</code><p>同上，但是从最后一个子元素开始计数。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>:only-of-type</code><mark>CSS3</mark></div>
+    <div class="col-sm-8"><code>p:only-of-type</code><p>指定属于父元素的包含有唯一&lt;p&gt;元素的元素。<br />“:only-of-type”选择器用来选择一个元素是它的父元素的唯一一个相同类型的子元素。这样说或许不太好理解，换一种说法。“:only-of-type”是表示一个元素他有很多个子元素，而其中只有一种类型的子元素是唯一的，使用“:only-of-type”选择器就可以选中这个元素中的唯一一个类型子元素。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>:only-child</code><mark>CSS3</mark></div>
+    <div class="col-sm-8"><code>p:only-child</code><p>选择属于父元素的只有唯一子 &lt;p&gt; 元素的元素。<br />“:only-child”选择器选择的是父元素中只有一个子元素，而且只有唯一的一个子元素。也就是说，匹配的元素的父元素中仅有一个子元素，而且是一个唯一的子元素。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>:enabled</code><mark>CSS3</mark></div>
+    <div class="col-sm-8"><code>input:enabled</code><p>选择每个启用的 &lt;input&gt; 元素。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>:disabled</code><mark>CSS3</mark></div>
+    <div class="col-sm-8"><code>input:disabled</code><p>选择每个禁用的 &lt;input&gt; 元素</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>:checked</code><mark>CSS3</mark></div>
+    <div class="col-sm-8"><code>input:checked</code><p>选择每个被选中的 &lt;input&gt; 元素。<br />
+      <mark>只有 Opera 支持 :checked 选择器。</mark><br />
+      :checked 选择器匹配每个已被选中的 input 元素（只用于单选按钮和复选框）。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>:read-only</code><mark>CSS3</mark></div>
+    <div class="col-sm-8"><p><mark>IE不支持</mark><br />“:read-only”
+      用来指定处于只读状态元素的样式。简单点理解就是，元素中设置了“readonly=’readonly’”</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>:read-write</code><mark>CSS3</mark></div>
+    <div class="col-sm-8"><p><mark>IE不支持</mark><br />“:read-write”选择器刚好与“:read-only”选择器相反，主要用来指定当元素处于非只读状态时的样式。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>::selection</code><mark>CSS3</mark></div>
+    <div class="col-sm-8"><code>::selection</code><p>选择被用户选取的元素部分。<br />
+      <mark>IE9+、Opera、Google Chrome 以及 Safari 中支持 ::selection 选择器。Firefox 支持替代的 ::-moz-selection。</mark><br />::selection 选择器匹配被用户选取的选取是部分。<br />
+      只能向 ::selection 选择器应用少量 CSS 属性：color、background、cursor 以及 outline。</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12 white"><h1>CSS 属性</h1></div>
+  </div>
+  <div class="row">
+    <div id="css-background" class="col-sm-12"><h3>CSS 背景属性（Background）</h3></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>background</code><p>在一个声明中设置所有的背景属性。</p></div>
+    <div class="col-sm-8"><p>IE8 以及更早的浏览器不支持一个元素多个背景图像。</p><pre>background ： [background-color] | [background-image] | [background-position][/background-size] | [background-repeat] | [background-attachment] | [background-clip] | [background-origin],...</pre><p>用逗号隔开每组 background 的缩写值。<br />如果有 size 值，需要紧跟 position 并且用 "/" 隔开。<br />如果有多个背景图片，而其他属性只有一个（例如 background-repeat 只有一个），表明所有背景图片应用该属性值。<br />background-color 只能设置一个。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>background-attachment</code><p>设置背景图像是否固定或者随着页面的其余部分滚动。</p></div>
+    <div class="col-sm-8"><p><code>background-attachment:fixed  /*声明图像相对于可视区是固定的,*/</code><br />属性的默认值是 scroll 背景图像会随着页面其余部分的滚动而移动。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>background-color</code><p>设置元素的背景颜色。</p></div>
+    <div class="col-sm-8"><p><code>background-color: gray;</code><br />其默认值是 transparent。transparent 有“透明”之意。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>background-image</code><p>设置元素的背景图像。</p></div>
+    <div class="col-sm-8"><p><code>background-image: url(/i/eg_bg_04.gif);</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>background-position</code><p>设置背景图像的开始位置。</p></div>
+    <div class="col-sm-8"><p>需要把 background-attachment 属性设置为 "fixed"，才能保证该属性在 Firefox 和 Opera 中正常工作。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>background-repeat</code><p>设置是否及如何重复背景图像。</p></div>
+    <div class="col-sm-8"><code>background-repeat: repeat-y;  /*no-repeat*/}</code></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>background-clip</code><mark>CSS3</mark><br /><mark>IE9+ Firefox Chrome Safari Opera</mark><p>规定背景的绘制区域。</p></div>
+    <div class="col-sm-8"><p>border-box 背景被裁剪到边框盒。<br />padding-box 背景被裁剪到内边距框。<br />content-box 背景被裁剪到内容框。<br />no-clip 表示不裁切</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>background-origin</code><mark>CSS3</mark><br /><mark>IE9+ Firefox4+ Chrome Safari5+ Opera</mark><p>规定背景图片的定位区域。</p></div>
+    <div class="col-sm-8"><p>background-origin 属性规定 background-position 属性相对于什么位置来定位。<br />如果背景图像的 background-attachment 属性为 "fixed"，background-repeat不是no-repeat，则该属性没有效果。<br />border-box 背景被裁剪到边框盒。<br />padding-box 背景被裁剪到内边距框。<br />content-box 背景被裁剪到内容框。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>background-size</code><mark>CSS3</mark><br /><mark>IE9+ Firefox4+ Chrome Safari5+ Opera</mark><p>规定背景图片的尺寸。</p></div>
+    <div class="col-sm-8"><p>auto：默认值，不改变背景图片的原始高度和宽度；<br /><长度值>：成对出现如200px 50px，当设置一个值时，将其作为图片宽度值来等比缩放；<br /><百分比>：0％~100％之间的任何值，当设置一个值时同上；<br />cover：顾名思义为覆盖，即将背景图片等比缩放以填满整个容器；<br />contain：容纳，即将背景图片等比缩放至某一边紧贴容器边缘为止。</p></div>
+  </div>
+
+  <div class="row">
+    <div id="css-font" class="col-sm-12"><h3>CSS 字体属性（Font）</h3></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>font</code><p>在一个声明中设置所有字体属性。</p></div>
+    <div class="col-sm-8"><p>字体缩写：<br /><code>body { font-style font-variant font-weight font-size/line-height font-family }</code><br /><code>body { font:italic small-caps bold 12px/1.5em "宋体",sans-serif; }</code><br />注意：<br />
+    1、使用这一简写方式你至少要指定 font-size 和 font-family 属性，其他的属性(如 font-weight、font-style、font-varient、line-height)如未指定将自动使用默认值。<br />
+    2、在缩写时 font-size 与 line-height 中间要加入“/”斜扛。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>font-family</code><p>规定文本的字体系列。</p></div>
+    <div class="col-sm-8"><p><code>p {font-family: Times, TimesNR, 'New Century Schoolbook',
+       Georgia, 'New York', serif;}</code><br />font-family 可以把多个字体名称作为一个“回退”系统来保存。如果浏览器不支持第一个字体，则会尝试下一个。</p>
+  <pre>嵌入字体:
+@font-face {
+    font-family : 字体名称;
+    src : 字体文件在服务器上的相对或绝对路径;
+}
+p {
+    font-size :12px;
+    font-family : "My Font";
+    /*必须项，设置@font-face中font-family同样的值*/
+}</pre></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>font-size</code><p>规定文本的字体尺寸。</p></div>
+    <div class="col-sm-8"><p>1、像素：<code>h1 {font-size:60px;}</code><br />2、em：<code>h1 {font-size:3.75em;}</code><br />3、百分比：<code>p{font-size:12px;line-height:130%}</code>设置行高（行间距）为字体的130%</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>font-style</code><p>规定文本的字体样式。</p></div>
+    <div class="col-sm-8"><p><code>p.normal {font-style:normal;}/*文本正常显示*/</code><br />
+      <code>p.italic {font-style:italic;}/*文本斜体显示*/</code><br />
+      <code>p.oblique {font-style:oblique;}/*文本倾斜显示*/</code></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>font-variant</code><p>规定是否以小型大写字母的字体显示文本。</p></div>
+    <div class="col-sm-8"><p><code>p {font-variant:small-caps;}/*小型大写字母*/</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>font-weight</code><p>规定字体的粗细。</p></div>
+    <div class="col-sm-8"><p><code>p.normal {font-weight:normal;}</code><br /><code>p.thick {font-weight:bold;}</code><br /><code>p.thicker {font-weight:900;}</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>font-size-adjust</code><p>为元素规定 aspect 值。</p></div>
+    <div class="col-sm-8"><p>IE 不支持 font-size-adjust 属性。<br />font-size-adjust 属性为某个元素规定一个 aspect 值，这样就可以保持首选字体的 x-height。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>font-stretch</code><p>收缩或拉伸当前的字体系列。</p></div>
+    <div class="col-sm-8"><p>所有主流浏览器都不支持 font-stretch 属性。</p></div>
+  </div>
+
+  <div class="row">
+    <div id="css-text" class="col-sm-12"><h3>CSS 文本属性（Text）</h3></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>color</code><p>设置文本的颜色。</p></div>
+    <div class="col-sm-8"><p>color_name 规定颜色值为颜色名称的颜色（比如 red）。<br />hex_number  规定颜色值为十六进制值的颜色（比如 #ff0000）。<br />rgb_number  规定颜色值为 rgb 代码的颜色（比如 rgb(255,0,0)）。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>direction</code><p>规定文本的方向。</p></div>
+    <div class="col-sm-8"><p>ltr  默认。文本方向从左到右。<br />rtl 文本方向从右到左。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>letter-spacing</code><p>设置字符间距。</p></div>
+    <div class="col-sm-8"><p>中文字间距、英文字母间距</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>word-spacing</code><p>设置单词间距。</p></div>
+    <div class="col-sm-8"><p>单词间距</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>line-height</code><p>设置行高。</p></div>
+    <div class="col-sm-8"><p>number 设置数字，此数字会与当前的字体尺寸相乘来设置行间距。<br />length  设置固定的行间距。<br />% 基于当前字体尺寸的百分比行间距。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>text-align</code><p>规定文本的水平对齐方式。</p></div>
+    <div class="col-sm-8"><p><code>text-align:center /*left、right、center、justify*/</code><br />justify:两端对齐文本，调整单词和字母间的间隔</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>text-decoration</code><p>规定添加到文本的装饰效果。</p></div>
+    <div class="col-sm-8"><p>IE、Chrome 或 Safari 不支持 "blink" 属性值。<br /><code>a {text-decoration: none;}</code><br />underline 会对元素加下划线，就像 HTML 中的 U 元素一样。<br />overline 的作用恰好相反，会在文本的顶端画一个上划线。<br /> line-through 则在文本中间画一个贯穿线，等价于 HTML 中的 S 和 strike 元素。<br />blink 会让文本闪烁。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>text-indent</code><p>规定文本块首行的缩进。</p></div>
+    <div class="col-sm-8"><p><code>p {text-indent: 5em; /*注意：5em的意思就是文字的5倍大小。*/}</code><br />注意：一般来说，可以为所有块级元素应用 text-indent，但无法将该属性应用于行内元素，图像之类的替换元素上也无法应用 text-indent 属性。不过，如果一个块级元素（比如段落）的首行中有一个图像，它会随该行的其余文本移动。<br />百分数要相对于缩进元素父元素的宽度：<code>p {text-indent: 20%;}</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>text-transform</code><p>控制文本的大小写。</p></div>
+    <div class="col-sm-8"><p><code>h1 {text-transform: uppercase}</code><br />默认值 none 对文本不做任何改动，将使用源文档中的原有大小写。顾名思义，uppercase 和 lowercase 将文本转换为全大写和全小写字符。最后，capitalize 只对每个单词的首字母大写。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>unicode-bidi</code><p>设置文本方向。</p></div>
+    <div class="col-sm-8"><p>1.normal元素不会对双向算法打开附加的一层嵌套。对于行内元素，顺序的隐式重排会跨元素边界进行。<br />
+2.embed如果是一个行内元素，这个值对于双向算法会打开附件的一层嵌套。这个嵌套层的方向由 direction 属性指定。会在元素内部隐式地完成顺序重排。这对应于在元素开始处增加一个 LRE（对于 direction:ltr ：U+202A）或 RLE（对于 direction:rtl ：U+202B），并在元素的最后增加一个 PDF（U+202C）。<br />
+3.bidi-override这会为行内元素创建一个覆盖。对于块级元素，将为不在另一块中的行内后代创建一个覆盖。这说明，顺序重排在元素内部严格按照 direction 属性进行；忽略了双向算法的隐式部分。这对应于在元素开始处增加一个 LRO（对于 direction:ltr ：U+202D）或 RLO（对于 direction:rtl ：U+202E），并在元素最后增加一个 PDF（U+202C）。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>white-space</code><p>规定如何处理元素中的空白。</p></div>
+    <div class="col-sm-8">
+      <table class="table table-bordered">
+        <tr><th>值</th><th>空白符</th><th>换行符</th><th>自动换行</th></tr>
+        <tr><td>pre-line</td><td>合并</td><td>保留</td><td>允许</td></tr>
+        <tr><td>normal</td><td>合并</td><td>忽略</td><td>允许</td></tr>
+        <tr><td>nowrap</td><td>合并</td><td>忽略</td><td>不允许</td></tr>
+        <tr><td>pre</td><td>保留</td><td>保留</td><td>不允许</td></tr>
+        <tr><td>pre-wrap</td><td>保留</td><td>保留</td><td>允许</td></tr>
+      </table>
+      <p>pre  空白会被浏览器保留。其行为方式类似 HTML 中的 pre 标签。<br />nowrap  文本不会换行，文本会在在同一行上继续，直到遇到 br 标签为止。<br />pre-wrap  保留空白符序列，但是正常地进行换行。<br />pre-line  合并空白符序列，但是保留换行符。</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>text-align-last</code><p>设置如何对齐最后一行或紧挨着强制换行符之前的行。</p></div>
+    <div class="col-sm-8"><p>只有 IE 支持 text-align-last 属性。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>text-overflow</code><mark>CSS3</mark><p>规定当文本溢出包含元素时发生的事情。</p></div>
+    <div class="col-sm-8"><p>clip 修剪文本。<br />ellipsis  显示省略符号来代表被修剪的文本。<br />string  使用给定的字符串来代表被修剪的文本。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>text-shadow</code><mark>CSS3</mark><br /><mark>IE10+ Firefox Chrome Safari Opera</mark><p>向文本添加阴影。</p></div>
+    <div class="col-sm-8"><p><code>text-shadow: h-shadow v-shadow blur color;</code><br />h-shadow 必需。水平阴影的位置。允许负值。<br />v-shadow  必需。垂直阴影的位置。允许负值。<br />blur  可选。模糊的距离。<br />color 可选。阴影的颜色。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>word-break</code><mark>CSS3</mark><p>规定非中日韩文本的换行规则。</p></div>
+    <div class="col-sm-8"><p>break-all 允许在单词内换行。<br />keep-all 只能在半角空格或连字符处换行。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>word-wrap</code><mark>CSS3</mark><p>允许对长的不可分割的单词进行分割并换行到下一行。</p></div>
+    <div class="col-sm-8"><p>normal 只在允许的断字点换行（浏览器保持默认处理）。<br />break-word 在长单词或 URL 地址内部进行换行。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>hanging-punctuation</code><mark>CSS3</mark><p>规定标点字符是否位于线框之外。</p></div>
+    <div class="col-sm-8"><p>目前主流浏览器都不支持 hanging-punctuation 属性。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>punctuation-trim</code><mark>CSS3</mark><p>规定是否对标点字符进行修剪。</p></div>
+    <div class="col-sm-8"><p>目前主流浏览器都不支持 punctuation-trim 属性。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>text-emphasis</code><mark>CSS3</mark><p>向元素的文本应用重点标记以及重点标记的前景色。</p></div>
+    <div class="col-sm-8"><p>目前主流浏览器都不支持 text-emphasis 属性。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>text-justify</code><mark>CSS3</mark><p>规定当  text-align 设置为 "justify" 时所使用的对齐方法。</p></div>
+    <div class="col-sm-8"><p>只有 IE 支持 text-justify 属性。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>text-outline</code><mark>CSS3</mark><p>规定文本的轮廓。</p></div>
+    <div class="col-sm-8"><p>所有主流浏览器都不支持 text-outline 属性。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>text-wrap</code><mark>CSS3</mark><p>规定文本的换行规则。</p></div>
+    <div class="col-sm-8"><p>目前主流浏览器都不支持 text-wrap 属性。</p></div>
+  </div>
+
+  <div class="row">
+    <div id="css-list" class="col-sm-12"><h3>CSS 列表属性（List）</h3></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>list-style</code><p>在一个声明中设置所有的列表属性。</p></div>
+    <div class="col-sm-8"><p><code>list-style:square inside url('/i/arrow.gif');</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>list-style-image</code><p>将图象设置为列表项标记。</p></div>
+    <div class="col-sm-8"><p><code>list-style-image:url("/i/arrow.gif");</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>list-style-position</code><p>设置列表项标记的放置位置。</p></div>
+    <div class="col-sm-8"><p>该属性用于声明列表标志相对于列表项内容的位置。外部 (outside) 标志会放在离列表项边框边界一定距离处，不过这距离在 CSS 中未定义。内部 (inside) 标志处理为好像它们是插入在列表项内容最前面的行内元素一样。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>list-style-type</code><p>设置列表项标记的类型。</p></div>
+    <div class="col-sm-8"><p><code>list-style-type:none;</code></p></div>
+  </div>
+
+  <div class="row">
+    <div id="css-table" class="col-sm-12"><h3>CSS 表格属性（Table）</h3></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-collapse</code><p>规定是否合并表格边框。</p></div>
+    <div class="col-sm-8"><p><code>border-collapse:collapse;/*折叠边框*/</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-spacing</code><p>规定相邻单元格边框之间的距离。</p></div>
+    <div class="col-sm-8"><p>该属性指定分隔边框模型中单元格边界之间的距离。在指定的两个长度值中，第一个是水平间隔，第二个是垂直间隔。除非 border-collapse 被设置为 separate，否则将忽略这个属性。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>caption-side</code><p>规定表格标题的位置。</p></div>
+    <div class="col-sm-8"><p>top  默认值。把表格标题定位在表格之上。<br />bottom  把表格标题定位在表格之下。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>empty-cells</code><p>规定是否显示表格中的空单元格上的边框和背景。</p></div>
+    <div class="col-sm-8"><p>hide 不在空单元格周围绘制边框。<br />show  在空单元格周围绘制边框。默认。<br />除非 border-collapse 被设置为 separate，否则将忽略这个属性。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>table-layout</code><p>设置用于表格的布局算法。</p></div>
+    <div class="col-sm-8"><p>该属性指定了完成表布局时所用的布局算法。固定布局算法比较快，但是不太灵活，而自动算法比较慢，不过更能反映传统的 HTML 表。<br />automatic 默认。列宽度由单元格内容设定。<br />fixed 列宽由表格宽度和列宽度设定。</p></div>
+  </div>
+
+  <div class="row">
+    <div id="css-margin" class="col-sm-12"><h3>CSS 外边距属性（Margin）</h3></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>margin</code><p>在一个声明中设置所有外边距属性。</p></div>
+    <div class="col-sm-8"><p><code>margin:20px 10px 15px 30px;</code><br />外边距会合并<br />%  规定基于父元素的宽度的百分比的外边距。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>margin-bottom</code><p>设置元素的下外边距。</p></div>
+    <div class="col-sm-8"><p><code>margin-bottom:30px;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>margin-left</code><p>设置元素的左外边距。</p></div>
+    <div class="col-sm-8"><p><code>margin-left:30px;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>margin-right</code><p>设置元素的右外边距。</p></div>
+    <div class="col-sm-8"><p><code>margin-right:30px;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>margin-top</code><p>设置元素的上外边距。</p></div>
+    <div class="col-sm-8"><p><code>margin-top:30px;</code></p></div>
+  </div>
+
+  <div class="row">
+    <div id="css-padding" class="col-sm-12"><h3>CSS 内边距属性（Padding）</h3></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>padding</code><p>在一个声明中设置所有内边距属性。</p></div>
+    <div class="col-sm-8"><p><code>padding:20px 10px 15px 30px;</code><br />不允许使用负值。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>padding-bottom</code><p>设置元素的下内边距。</p></div>
+    <div class="col-sm-8"><p><code>padding-bottom:2cm;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>padding-left</code><p>设置元素的左内边距。</p></div>
+    <div class="col-sm-8"><p><code>padding-left:2cm;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>padding-right</code><p>设置元素的右内边距。</p></div>
+    <div class="col-sm-8"><p><code>padding-right:2cm;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>padding-top</code><p>设置元素的上内边距。</p></div>
+    <div class="col-sm-8"><p><code>padding-top:2cm;</code></p></div>
+  </div>
+
+  <div class="row">
+    <div id="css-border" class="col-sm-12"><h3>CSS 边框属性（Border 和 Outline）</h3></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border</code><p>在一个声明中设置所有的边框属性。</p></div>
+    <div class="col-sm-8"><p><code>border:2px  solid  red;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-bottom</code><p>在一个声明中设置所有的下边框属性。</p></div>
+    <div class="col-sm-8"><p><code>border-bottom:thick dotted #ff0000;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-bottom-color</code><p>设置下边框的颜色。</p></div>
+    <div class="col-sm-8"><p><code>border-bottom-color:#ff0000;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-bottom-style</code><p>设置下边框的样式。</p></div>
+    <div class="col-sm-8"><p>none 定义无边框。<br />
+      hidden  与 "none" 相同。不过应用于表时除外，对于表，hidden 用于解决边框冲突。<br />
+      dotted  定义点状边框。在大多数浏览器中呈现为实线。<br />
+      dashed  定义虚线。在大多数浏览器中呈现为实线。<br />
+      solid 定义实线。<br />
+      double  定义双线。双线的宽度等于 border-width 的值。<br />
+      groove  定义 3D 凹槽边框。其效果取决于 border-color 的值。<br />
+      ridge 定义 3D 垄状边框。其效果取决于 border-color 的值。<br />
+      inset 定义 3D inset 边框。其效果取决于 border-color 的值。<br />
+      outset  定义 3D outset 边框。其效果取决于 border-color 的值。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-bottom-width</code><p>设置下边框的宽度。</p></div>
+    <div class="col-sm-8"><p>thin 定义细的下边框。<br />
+      medium  默认值。定义中等的下边框。<br />
+      thick 定义粗的下边框。<br />
+      length  允许您自定义下边框的宽度。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-color</code><p>设置四条边框的颜色。</p></div>
+    <div class="col-sm-8"><p><code>border-color: transparent;/*透明边框*/</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-left</code><p>在一个声明中设置所有的左边框属性。</p></div>
+    <div class="col-sm-8"><p><code>border-left:thick double #ff0000;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-left-color</code><p>设置左边框的颜色。</p></div>
+    <div class="col-sm-8"><p><code>border-left-color:#ff0000;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-left-style</code><p>设置左边框的样式。</p></div>
+    <div class="col-sm-8"><p><code>border-left-style:dotted;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-left-width</code><p>设置左边框的宽度。</p></div>
+    <div class="col-sm-8"><p><code>border-left-width:15px;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-right</code><p>在一个声明中设置所有的右边框属性。</p></div>
+    <div class="col-sm-8"><p><code>border-right:thick double #ff0000;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-right-color</code><p>设置右边框的颜色。</p></div>
+    <div class="col-sm-8"><p><code>border-right-color:#ff0000;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-right-style</code><p>设置右边框的样式。</p></div>
+    <div class="col-sm-8"><p><code>border-right-style:dotted;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-right-width</code><p>设置右边框的宽度。</p></div>
+    <div class="col-sm-8"><p><code>border-right-width:15px;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-style</code><p>设置四条边框的样式。</p></div>
+    <div class="col-sm-8"><p><code>border-style:solid; /*dashed（虚线）| dotted（点线）| solid（实线）*/</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-top</code><p>在一个声明中设置所有的上边框属性。</p></div>
+    <div class="col-sm-8"><p><code>border-top:thick double #ff0000;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-top-color</code><p>设置上边框的颜色。</p></div>
+    <div class="col-sm-8"><p><code>border-top-color:#ff0000;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-top-style</code><p>设置上边框的样式。</p></div>
+    <div class="col-sm-8"><p><code>border-top-style:dotted;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-top-width</code><p>设置上边框的宽度。</p></div>
+    <div class="col-sm-8"><p><code>border-top-width:15px;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-width</code><p>设置四条边框的宽度。</p></div>
+    <div class="col-sm-8"><p><code>border-width:2px;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>outline</code><p>在一个声明中设置所有的轮廓属性。</p></div>
+    <div class="col-sm-8"><p><code>outline:#00FF00 dotted thick;</code><br />注释：轮廓线不会占据空间，也不一定是矩形。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>outline-color</code><p>设置轮廓的颜色。</p></div>
+    <div class="col-sm-8"><p><code>outline-color:#00ff00;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>outline-style</code><p>设置轮廓的样式。</p></div>
+    <div class="col-sm-8"><p>none 默认。定义无轮廓。<br />
+      dotted  定义点状的轮廓。<br />
+      dashed  定义虚线轮廓。<br />
+      solid 定义实线轮廓。<br />
+      double  定义双线轮廓。双线的宽度等同于 outline-width 的值。<br />
+      groove  定义 3D 凹槽轮廓。此效果取决于 outline-color 值。<br />
+      ridge 定义 3D 凸槽轮廓。此效果取决于 outline-color 值。<br />
+      inset 定义 3D 凹边轮廓。此效果取决于 outline-color 值。<br />
+      outset  定义 3D 凸边轮廓。此效果取决于 outline-color 值。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>outline-width</code><p>设置轮廓的宽度。</p></div>
+    <div class="col-sm-8"><p>thin 规定细轮廓。<br />
+      medium  默认。规定中等的轮廓。<br />
+      thick 规定粗的轮廓。<br />
+      length  允许您规定轮廓粗细的值。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-bottom-left-radius</code><mark>CSS3</mark><br /><mark>IE9+ Firefox4+ Chrome Safari5+ Opera</mark><p>定义边框左下角的形状。</p></div>
+    <div class="col-sm-8"><p>语法：<code>border-bottom-left-radius: length|% [length|%];</code><br />
+      注释：border-bottom-left-radius 属性的长度值和百分比值定义四分之一椭圆（定义外部边框边缘的边角形状）的半径（radii）。第一个值是水平半径，第二个值是垂直半径。如果省略第二个值，则复制第一个值。如果长度为零，则边角为方形，而不是圆形。水平半径的百分比值参考边框盒的宽度，而垂直半径的百分比值参考边框盒的高度。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-bottom-right-radius</code><mark>CSS3</mark><br /><mark>IE9+ Firefox4+ Chrome Safari5+ Opera</mark><p>定义边框右下角的形状。</p></div>
+    <div class="col-sm-8"><p><code>border-bottom-right-radius:2em;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-image</code><mark>CSS3</mark><br /><mark>IE11+ Firefox4+ Chrome Safari5+ Opera15+</mark><p>简写属性，设置所有 border-image-* 属性。</p></div>
+    <div class="col-sm-8"><p><code>border-image:url(border.png) 30 30 round;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-image-outset</code><mark>CSS3</mark><br /><mark>IE11+ Firefox4+ Chrome Safari5+ Opera15+</mark><p>规定边框图像区域超出边框的量。</p></div>
+    <div class="col-sm-8"><p><code>border-image-outset: length|number;</code><br />
+      注释：border-image-outset 属性规定边框图像超出边框盒的量。在上、右、下、左侧。如果忽略第四个值，则与第二个值相同。如果省略第三个值，则与第一个值相同。如果省略第二个值，则与第一个值相同。不允许任何负值作为 border-image-outset 值。<br />number  代表对应的 border-width 的倍数。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-image-repeat</code><mark>CSS3</mark><br /><mark>IE11+ Firefox4+ Chrome Safari5+ Opera15+</mark><p>图像边框是否应平铺(repeated)、铺满(rounded)或拉伸(stretched)。</p></div>
+    <div class="col-sm-8"><p>stretch  拉伸图像来填充区域<br />
+      repeat  平铺（重复）图像来填充区域。<br />
+      round 类似 repeat 值。如果无法完整平铺所有图像，则对图像进行缩放以适应区域。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-image-slice</code><mark>CSS3</mark><br /><mark>IE11+ Firefox4+ Chrome Safari5+ Opera15+</mark><p>规定图像边框的向内偏移。</p></div>
+    <div class="col-sm-8"><p>语法：<code>border-image-slice: number|%|fill;</code><br />
+      注释：该属性规定图像的上、右、下、左侧边缘的向内偏移，图像被分割为九个区域：四个角、四条边以及一个中间区域。除非使用了关键词 fill，否则中间的图像部分会被丢弃。如果省略第四个数值/百分比，则与第二个值相同。如果省略第三个值，则与第一个值相同。如果省略第二个值，则与第一个值相同。<br />
+      number  数字值，代表图像中像素（如果是光栅图像）或矢量坐标（如果是矢量图像）。
+      % 相对于图像尺寸的百分比值：图像的宽度影响水平偏移，高度影响垂直偏移。
+      fill  保留边框图像的中间部分。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-image-source</code><mark>CSS3</mark><br /><mark>IE11+ Firefox4+ Chrome Safari5+ Opera15+</mark><p>规定用作边框的图片。</p></div>
+    <div class="col-sm-8"><p><code>border-image-source: none|image;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-image-width</code><mark>CSS3</mark><br /><mark>IE11+ Firefox4+ Chrome Safari5+ Opera15+</mark><p>规定图片边框的宽度。</p></div>
+    <div class="col-sm-8"><p><code>border-image-width: number|%|auto;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-radius</code><mark>CSS3</mark><br /><mark>IE9+ Firefox4+ Chrome Safari5+ Opera</mark><p>简写属性，设置所有四个 border-*-radius 属性。</p></div>
+    <div class="col-sm-8"><p><code>border-radius: 1-4 length|% / 1-4 length|%;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-top-left-radius</code><mark>CSS3</mark><br /><mark>IE9+ Firefox4+ Chrome Safari5+ Opera</mark><p>定义边框左上角的形状。</p></div>
+    <div class="col-sm-8"><p><code>border-bottom-right-radius: length|% [length|%];</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>border-top-right-radius</code><mark>CSS3</mark><br /><mark>IE9+ Firefox4+ Chrome Safari5+ Opera</mark><p>定义边框右下角的形状。</p></div>
+    <div class="col-sm-8"><p><code>border-bottom-right-radius: length|% [length|%];</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>box-shadow</code><mark>CSS3</mark><br /><mark>IE9+ Firefox4+ Chrome Safari5+ Opera</mark><p>向方框添加一个或多个阴影。</p></div>
+    <div class="col-sm-8"><p><code>box-shadow: h-shadow v-shadow blur spread color inset;</code><br />
+      h-shadow  必需。水平阴影的位置。允许负值。<br />
+      v-shadow  必需。垂直阴影的位置。允许负值。<br />
+      blur  可选。阴影模糊半径。其值只能是为正值，如果其值为0时，表示阴影不具有模糊效果，其值越大阴影的边缘就越模糊<br />
+      spread  可选。阴影扩展半径。其值可以是正负值，如果值为正，则整个阴影都延展扩大，反之值为负值时，则缩小<br />
+      color 可选。阴影的颜色。请参阅 CSS 颜色值。<br />
+      inset 可选。将外部阴影 (outset) 改为内部阴影。inset 可以写在参数的第一个或最后一个，其它位置是无效的。</p></div>
+  </div>
+
+  <div class="row">
+    <div id="css-positioning" class="col-sm-12"><h3>CSS 定位属性（Positioning）</h3></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>bottom</code><p>设置定位元素下外边距边界与其包含块下边界之间的偏移。</p></div>
+    <div class="col-sm-8"><p>对于相对定义元素，如果 bottom 和 top 都是 auto，其计算值则都是 0；如果其中之一为 auto，则取另一个值的相反数；如果二者都不是 auto，bottom 将取 top 值的相反数。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>clear</code><p>规定元素的哪一侧不允许其他浮动元素。</p></div>
+    <div class="col-sm-8"><p>clear 属性定义了元素的哪边上不允许出现浮动元素。在 CSS1 和 CSS2 中，这是通过自动为清除元素（即设置了 clear 属性的元素）增加上外边距实现的。在 CSS2.1 中，会在元素上外边距之上增加清除空间，而外边距本身并不改变。不论哪一种改变，最终结果都一样，如果声明为左边或右边清除，会使元素的上外边框边界刚好在该边上浮动元素的下外边距边界之下。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>clip</code><p>剪裁绝对定位元素。</p></div>
+    <div class="col-sm-8"><p><code>clip:rect(0px,60px,200px,0px);</code><br />shape 设置元素的形状。唯一合法的形状值是：<code>rect (top, right, bottom, left)</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>cursor</code><p>规定要显示的光标的类型（形状）。</p></div>
+    <div class="col-sm-8"><p>
+      url  需使用的自定义光标的 URL。
+      注释：请在此列表的末端始终定义一种普通的光标，以防没有由 URL 定义的可用光标。<br />
+      default 默认光标（通常是一个箭头）<br />
+      auto  默认。浏览器设置的光标。<br />
+      crosshair 光标呈现为十字线。<br />
+      pointer 光标呈现为指示链接的指针（一只手）<br />
+      move  此光标指示某对象可被移动。<br />
+      e-resize  此光标指示矩形框的边缘可被向右（东）移动。<br />
+      ne-resize 此光标指示矩形框的边缘可被向上及向右移动（北/东）。<br />
+      nw-resize 此光标指示矩形框的边缘可被向上及向左移动（北/西）。<br />
+      n-resize  此光标指示矩形框的边缘可被向上（北）移动。<br />
+      se-resize 此光标指示矩形框的边缘可被向下及向右移动（南/东）。<br />
+      sw-resize 此光标指示矩形框的边缘可被向下及向左移动（南/西）。<br />
+      s-resize  此光标指示矩形框的边缘可被向下移动（南）。<br />
+      w-resize  此光标指示矩形框的边缘可被向左移动（西）。<br />
+      text  此光标指示文本。<br />
+      wait  此光标指示程序正忙（通常是一只表或沙漏）。<br />
+      help  此光标指示可用的帮助（通常是一个问号或一个气球）。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>display</code><p>规定元素应该生成的框的类型。</p></div>
+    <div class="col-sm-8"><p>块级元素：<code>display:block;</code><br />
+      常用的块状元素有：<br /><code>
+      &lt;div&gt;、&lt;p&gt;、&lt;h1&gt;...&lt;h6&gt;、&lt;ol&gt;、&lt;ul&gt;、&lt;dl&gt;、&lt;table&gt;、&lt;address&gt;、&lt;blockquote&gt;、&lt;form&gt;</code><br />
+      特点：<br />
+      1、每个块级元素都从新的一行开始，并且其后的元素也另起一行。<br />
+      2、元素的高度、宽度、行高以及顶和底边距都可设置。<br />
+      3、元素宽度在不设置的情况下，是它本身父容器的100%（和父元素的宽度一致），除非设定一个宽度。</p>
+      <p>内联元素：<code>display:inline;</code><br />
+      常用的内联元素有：<br /><code>
+      &lt;a&gt;、&lt;span&gt;、&lt;br&gt;、&lt;i&gt;、&lt;em&gt;、&lt;strong&gt;、&lt;label&gt;、&lt;q&gt;、&lt;var&gt;、&lt;cite&gt;、&lt;code&gt;</code><br />
+      特点：<br />
+      1、和其他元素都在一行上；<br />
+      2、元素的高度、宽度及顶部和底部边距不可设置；<br />
+      3、元素的宽度就是它包含的文字或图片的宽度，不可改变。</p>
+      <p>内联块状元素<code>display:inline-block;</code><br />
+      常用的内联块状元素有：<br />
+      <code>&lt;img&gt;、&lt;input&gt;</code><br />
+      特点：<br />
+      1、和其他元素都在一行上；<br />
+      2、元素的高度、宽度、行高以及顶和底边距都可设置。</p>
+      <p>none 此元素不会被显示。<br />
+      block 此元素将显示为块级元素，此元素前后会带有换行符。<br />
+      inline  默认。此元素会被显示为内联元素，元素前后没有换行符。<br />
+      inline-block  行内块元素。（CSS2.1 新增的值）<br />
+      list-item 此元素会作为列表显示。<br />
+      run-in  此元素会根据上下文作为块级元素或内联元素显示。<br />
+      compact CSS 中有值 compact，不过由于缺乏广泛支持，已经从 CSS2.1 中删除。<br />
+      marker  CSS 中有值 marker，不过由于缺乏广泛支持，已经从 CSS2.1 中删除。<br />
+      table 此元素会作为块级表格来显示（类似 table），表格前后带有换行符。<br />
+      inline-table  此元素会作为内联表格来显示（类似 table），表格前后没有换行符。<br />
+      table-row-group 此元素会作为一个或多个行的分组来显示（类似 tbody）。<br />
+      table-header-group  此元素会作为一个或多个行的分组来显示（类似 thead）。<br />
+      table-footer-group  此元素会作为一个或多个行的分组来显示（类似 tfoot）。<br />
+      table-row 此元素会作为一个表格行显示（类似 tr）。<br />
+      table-column-group  此元素会作为一个或多个列的分组来显示（类似 colgroup）。<br />
+      table-column  此元素会作为一个单元格列显示（类似 col）<br />
+      table-cell  此元素会作为一个表格单元格显示（类似 td 和 th）<br />
+      table-caption 此元素会作为一个表格标题显示（类似 caption）</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>float</code><p>规定框是否应该浮动。</p></div>
+    <div class="col-sm-8"><p>float 属性定义元素在哪个方向浮动。以往这个属性总应用于图像，使文本围绕在图像周围，不过在 CSS 中，任何元素都可以浮动。浮动元素会生成一个块级框，而不论它本身是何种元素。
+如果浮动非替换元素，则要指定一个明确的宽度；否则，它们会尽可能地窄。<br />
+注释：假如在一行之上只有极少的空间可供浮动元素，那么这个元素会跳至下一行，这个过程会持续到某一行拥有足够的空间为止。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>left</code><p>设置定位元素左外边距边界与其包含块左边界之间的偏移。</p></div>
+    <div class="col-sm-8"><p>注释：如果 "position" 属性的值为 "static"，那么设置 "left" 属性不会产生任何效果。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>overflow</code><p>规定当内容溢出元素框时发生的事情。</p></div>
+    <div class="col-sm-8"><p>visible  默认值。内容不会被修剪，会呈现在元素框之外。<br />
+      hidden  内容会被修剪，并且其余内容是不可见的。<br />
+      scroll  内容会被修剪，但是浏览器会显示滚动条以便查看其余的内容。<br />
+      auto  如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>position</code><p>规定元素的定位类型。</p></div>
+    <div class="col-sm-8"><p>absolute 
+      生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。
+      元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。<br />
+      fixed 
+      生成绝对定位的元素，相对于浏览器窗口进行定位。
+      元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。<br />
+      relative  
+      生成相对定位的元素，相对于其正常位置进行定位。
+      因此，"left:20" 会向元素的 LEFT 位置添加 20 像素。<br />
+      static  默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right 或者 z-index 声明）。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>right</code><p>设置定位元素右外边距边界与其包含块右边界之间的偏移。</p></div>
+    <div class="col-sm-8"><p>对于相对定义元素，left 的计算值始终等于 right。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>top</code><p>设置定位元素的上外边距边界与其包含块上边界之间的偏移。</p></div>
+    <div class="col-sm-8"><p>如果 "position" 属性的值为 "static"，那么设置 "top" 属性不会产生任何效果。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>vertical-align</code><p>设置元素的垂直对齐方式。</p></div>
+    <div class="col-sm-8"><p>baseline 默认。元素放置在父元素的基线上。<br />
+      sub 垂直对齐文本的下标。<br />
+      super 垂直对齐文本的上标<br />
+      top 把元素的顶端与行中最高元素的顶端对齐<br />
+      text-top  把元素的顶端与父元素字体的顶端对齐<br />
+      middle  把此元素放置在父元素的中部。<br />
+      bottom  把元素的顶端与行中最低的元素的顶端对齐。<br />
+      text-bottom 把元素的底端与父元素字体的底端对齐。<br />
+      length   <br />
+      % 使用 "line-height" 属性的百分比值来排列此元素。允许使用负值。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>visibility</code><p>规定元素是否可见。</p></div>
+    <div class="col-sm-8"><p>visible  默认值。元素是可见的。<br />
+hidden  元素是不可见的。<br />
+collapse  当在表格元素中使用时，此值可删除一行或一列，但是它不会影响表格的布局。被行或列占据的空间会留给其他内容使用。如果此值被用在其他的元素上，会呈现为 "hidden"。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>z-index</code><p>设置元素的堆叠顺序。</p></div>
+    <div class="col-sm-8"><p>该属性设置一个定位元素沿 z 轴的位置，z 轴定义为垂直延伸到显示区的轴。如果为正数，则离用户更近，为负数则表示离用户更远。</p></div>
+  </div>
+
+  <div class="row">
+    <div id="css-dimension" class="col-sm-12"><h3>CSS 尺寸属性（Dimension）</h3></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>height</code><p>设置元素高度。</p></div>
+    <div class="col-sm-8"><p>auto 默认。浏览器会计算出实际的高度。<br />
+      length  使用 px、cm 等单位定义高度。<br />
+      % 基于包含它的块级对象的百分比高度。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>max-height</code><p>设置元素的最大高度。</p></div>
+    <div class="col-sm-8"><p>该属性值会对元素的高度设置一个最高限制。因此，元素可以比指定值矮，但不能比其高。不允许指定负值。<br />
+注释：max-height 属性不包括外边距、边框和内边距。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>max-width</code><p>设置元素的最大宽度。</p></div>
+    <div class="col-sm-8"><p><code>max-width:100px;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>min-height</code><p>设置元素的最小高度。</p></div>
+    <div class="col-sm-8"><p>该属性值会对元素的高度设置一个最低限制。因此，元素可以比指定值高，但不能比其矮。不允许指定负值。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>min-width</code><p>设置元素的最小宽度。</p></div>
+    <div class="col-sm-8"><p><code>min-width:100px;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>width</code><p>设置元素的宽度。</p></div>
+    <div class="col-sm-8"><p><code>width:100px;</code></p></div>
+  </div>
+
+  <div class="row">
+    <div id="css-content" class="col-sm-12"><h3>内容生成（Generated Content）</h3></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>content</code><p>与 :before 以及 :after 伪元素配合使用，来插入生成内容。</p></div>
+    <div class="col-sm-8"><p>该属性用于定义元素之前或之后放置的生成内容。默认地，这往往是行内内容，不过该内容创建的框类型可以用属性 display 控制。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>counter-reset</code><p>创建或重置一个或多个计数器。</p></div>
+    <div class="col-sm-8"><pre>对部分和子部分进行编号（比如 "Section 1"、"1.1"、"1.2"）的方法：
+
+body{
+  counter-reset:section;
+}
+h1{
+  counter-reset:subsection;
+}
+h1:before{
+  content:"Section " counter(section) ". ";
+  counter-increment:section;
+}
+h2:before{
+  counter-increment:subsection;
+  content:counter(section) "." counter(subsection) " ";
+}</pre></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>counter-increment</code><p>递增或递减一个或多个计数器。</p></div>
+    <div class="col-sm-8"><p>counter-increment 属性设置某个选取器每次出现的计数器增量。默认增量是 1。<br />如果使用了 "display: none"，则无法增加计数。如使用 "visibility: hidden"，则可增加计数。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>quotes</code><p>设置嵌套引用的引号类型。</p></div>
+    <div class="col-sm-8"><pre>q:lang(en){
+  quotes: '"' '"' "'" "'";
+}</pre></div>
+  </div>
+
+  <div class="row">
+    <div id="css-print" class="col-sm-12"><h3>CSS 打印属性（Print）</h3></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>page-break-after</code><p>设置元素后的分页行为。</p></div>
+    <div class="col-sm-8"><pre>@media print{
+  table {page-break-after:always;}
+}</pre></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>page-break-before</code><p>设置元素前的分页行为。</p></div>
+    <div class="col-sm-8"><p><code>table {page-break-before:always;}</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>page-break-inside</code><p>设置元素内部的分页行为。</p></div>
+    <div class="col-sm-8"><p><code>table {page-break-inside:avoid;}</code></p></div>
+  </div>
+
+  <div class="row">
+    <div id="css-color" class="col-sm-12"><h3>Color 属性</h3></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>opacity</code><mark>CSS3</mark><p>规定书签的级别。</p></div>
+    <div class="col-sm-8"><p>图像透明度:</p>
+      <pre>img {
+    opacity:0.4;
+    filter:alpha(opacity=40); /* 针对 IE8 以及更早的版本 */
+  }</pre></div>
+  </div>
+
+  <div class="row">
+    <div id="css-box" class="col-sm-12"><h3>Box 属性<small>IE8+</small></h3></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>overflow-x</code><mark>CSS3</mark><p>如果内容溢出了元素内容区域，是否对内容的左/右边缘进行裁剪。</p></div>
+    <div class="col-sm-8"><p><code>overflow-x: visible|hidden|scroll|auto|no-display|no-content;</code><br />
+visible 不裁剪内容，可能会显示在内容框之外。<br />
+hidden  裁剪内容 - 不提供滚动机制。<br />
+scroll  裁剪内容 - 提供滚动机制。<br />
+auto  如果溢出框，则应该提供滚动机制。<br />
+no-display  如果内容不适合内容框，则删除整个框。<br />
+no-content  如果内容不适合内容框，则隐藏整个内容。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>overflow-y</code><mark>CSS3</mark><p>如果内容溢出了元素内容区域，是否对内容的上/下边缘进行裁剪。</p></div>
+    <div class="col-sm-8"><p><code>overflow-y: visible|hidden|scroll|auto|no-display|no-content;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>overflow-style</code><mark>CSS3 目前没有浏览器支持</mark><p>规定溢出元素的首选滚动方法。</p></div>
+    <div class="col-sm-8"><p><code>overflow-style: auto|scrollbar|panner|move|marquee;</code><br />
+注释：值既可以是 auto，或者是按照优先次序的方法列表。浏览器应该使用列表中其支持的的第一个滚动方法。<br />
+auto  <br />
+scrollbar 为溢出元素添加滚动条。<br />
+panner  <br />
+move  用户能够直接移动元素的内容。通常，用户能够用鼠标拖动内容。<br />
+marquee 内容自主移动，不需任何用户代理对其控制。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>rotation</code><mark>CSS3 目前没有浏览器支持</mark><p>围绕由 rotation-point 属性定义的点对元素进行旋转。</p></div>
+    <div class="col-sm-8"><p><code>rotation: angle;</code><br />
+angle 元素旋转角度。可能的值：0deg 到 360deg。</p></div>
+  </div>
+
+  <div class="row">
+    <div id="css-multicolumn" class="col-sm-12"><h3>多列属性（Multi-column）<small>IE10+</small></h3></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>column-count</code><mark>CSS3</mark><p>规定元素应该被分隔的列数。</p></div>
+    <div class="col-sm-8"><p><code>column-count: number|auto;</code><br />
+number  元素内容将被划分的最佳列数。<br />
+auto  由其他属性决定列数，比如 "column-width"。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>column-fill</code><mark>CSS3</mark><p>规定如何填充列。</p></div>
+    <div class="col-sm-8"><p><code>column-fill: balance|auto;</code><br />
+balance 对列进行协调。浏览器应对列长度的差异进行最小化处理。<br />
+auto  按顺序对列进行填充，列长度会各有不同。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>column-gap</code><mark>CSS3</mark><p>规定列之间的间隔。</p></div>
+    <div class="col-sm-8"><p><code>column-gap: length|normal;</code><br />
+length  把列间的间隔设置为指定的长度。<br />
+normal  规定列间间隔为一个常规的间隔。W3C 建议的值是 1em。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>column-rule</code><mark>CSS3</mark><p>设置所有 column-rule-* 属性的简写属性。</p></div>
+    <div class="col-sm-8"><p><code>column-rule: column-rule-width column-rule-style column-rule-color;</code><br />
+column-rule-width 设置列之间的宽度规则。<br />
+column-rule-style 设置列之间的样式规则。<br />
+column-rule-color 设置列之间的颜色规则。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>column-rule-color</code><mark>CSS3</mark><p>规定列之间规则的颜色。</p></div>
+    <div class="col-sm-8"><p><code>column-rule-color: color;</code><br />
+color 规定颜色规则。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>column-rule-style</code><mark>CSS3</mark><p>规定列之间规则的样式。</p></div>
+    <div class="col-sm-8"><p><code>column-rule-style: none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset;</code><br />
+none  定义没有规则。<br />
+hidden  定义隐藏规则。<br />
+dotted  定义点状规则。<br />
+dashed  定义虚线规则。<br />
+solid 定义实线规则。<br />
+double  定义双线规则。<br />
+groove  定义 3D grooved 规则。该效果取决于宽度和颜色值。<br />
+ridge 定义 3D ridged 规则。该效果取决于宽度和颜色值。<br />
+inset 定义 3D inset 规则。该效果取决于宽度和颜色值。<br />
+outset  定义 3D outset 规则。该效果取决于宽度和颜色值。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>column-rule-width</code><mark>CSS3</mark><p>规定列之间规则的宽度。</p></div>
+    <div class="col-sm-8"><p><code>column-rule-width: thin|medium|thick|length;</code><br />
+thin  定义纤细规则。<br />
+medium  定义中等规则。<br />
+thick 定义宽厚规则。<br />
+length  规定规则的宽度。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>column-span</code><mark>CSS3</mark><p>规定元素应该横跨的列数。</p></div>
+    <div class="col-sm-8"><p><code>column-span: 1|all;</code><br />
+1 元素应横跨一列。<br />
+all 元素应横跨所有列。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>column-width</code><mark>CSS3</mark><p>规定列的宽度。</p></div>
+    <div class="col-sm-8"><p><code>column-width: auto|length;</code><br />
+auto  由浏览器决定列宽。<br />
+length  规定列的宽度。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>columns</code><mark>CSS3</mark><p>规定设置 column-width 和 column-count 的简写属性。</p></div>
+    <div class="col-sm-8"><p><code>columns: column-width column-count;</code><br />
+column-width  列的宽度。<br />
+column-count  列数。</p></div>
+  </div>
+
+  <div class="row">
+    <div id="css-animation" class="col-sm-12"><h3>CSS3 动画属性（Animation）<small>IE10+</small></h3></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>@keyframes</code><mark>CSS3</mark><p>规定动画</p></div>
+    <div class="col-sm-8"><p>
+      <pre>@-webkit-keyframes mymove /* Safari 和 Chrome */
+{
+from {top:0px;}
+to {top:200px;}
+}
+
+@-moz-keyframes mymove /* Firefox */
+{
+0%   {top:0px;}
+25%  {top:200px;}
+50%  {top:100px;}
+75%  {top:200px;}
+100% {top:0px;}
+}</pre>
+    </p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>animation</code><mark>CSS3</mark><p>所有动画属性的简写属性，除了 animation-play-state 属性。</p></div>
+    <div class="col-sm-8"><p>语法<code>
+animation: name duration timing-function delay iteration-count direction;</code><br />
+animation-name  规定需要绑定到选择器的 keyframe 名称。。<br />
+animation-duration  规定完成动画所花费的时间，以秒或毫秒计。<br />
+animation-timing-function 规定动画的速度曲线。<br />
+animation-delay 规定在动画开始之前的延迟。<br />
+animation-iteration-count 规定动画应该播放的次数。<br />
+animation-direction 规定是否应该轮流反向播放动画。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>animation-name</code><mark>CSS3</mark><p>规定 @keyframes 动画的名称。</p></div>
+    <div class="col-sm-8"><p><code>animation-name: keyframename;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>animation-duration</code><mark>CSS3</mark><p>规定动画完成一个周期所花费的秒或毫秒。</p></div>
+    <div class="col-sm-8"><p><code>animation-duration: time;</code><br />规定完成动画所花费的时间。默认值是 0，意味着没有动画效果。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>animation-timing-function</code><mark>CSS3</mark><p>规定动画的速度曲线。</p></div>
+    <div class="col-sm-8"><p><code>animation-timing-function: value;</code><br />
+animation-timing-function 使用名为三次贝塞尔（Cubic Bezier）函数的数学函数，来生成速度曲线。您能够在该函数中使用自己的值，也可以预定义的值：<br />
+linear  动画从头到尾的速度是相同的。<br />
+ease  默认。动画以低速开始，然后加快，在结束前变慢。<br />
+ease-in 动画以低速开始。<br />
+ease-out  动画以低速结束。<br />
+ease-in-out 动画以低速开始和结束。<br />
+cubic-bezier(n,n,n,n) 在 cubic-bezier 函数中自己的值。可能的值是从 0 到 1 的数值。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>animation-delay</code><mark>CSS3</mark><p>规定动画何时开始。</p></div>
+    <div class="col-sm-8"><p><code>animation-delay: time;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>animation-iteration-count</code><mark>CSS3</mark><p>规定动画被播放的次数。</p></div>
+    <div class="col-sm-8"><p><code>animation-iteration-count: n|infinite;</code><br />
+n 定义动画播放次数的数值。<br />
+infinite  规定动画应该无限次播放。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>animation-direction</code><mark>CSS3</mark><p>规定动画是否在下一周期逆向地播放。</p></div>
+    <div class="col-sm-8"><p><code>animation-direction: normal|alternate;</code><br />
+normal  默认值。动画应该正常播放。<br />
+alternate 动画应该轮流反向播放。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>animation-play-state</code><mark>CSS3</mark><p>规定动画是否正在运行或暂停。</p></div>
+    <div class="col-sm-8"><p><code>animation-play-state: paused|running;</code><br />
+paused  规定动画已暂停。<br />
+running 规定动画正在播放。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>animation-fill-mode</code><mark>CSS3</mark><p>规定动画在播放之前或之后，其动画效果是否可见。</p></div>
+    <div class="col-sm-8"><p><code>animation-fill-mode : none | forwards | backwards | both;</code><br />
+none  不改变默认行为。<br />
+forwards  当动画完成后，保持最后一个属性值（在最后一个关键帧中定义）。<br />
+backwards 在 animation-delay 所指定的一段时间内，在动画显示之前，应用开始属性值（在第一个关键帧中定义）。<br />
+both  向前和向后填充模式都被应用。</p></div>
+  </div>
+
+  <div class="row">
+    <div id="css-transform" class="col-sm-12"><h3>2D/3D 转换属性（Transform）<small>2D IE9+ / 3D IE10+</small></h3></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>transform</code><mark>CSS3</mark><p>向元素应用 2D 或 3D 转换。</p></div>
+    <div class="col-sm-8"><p><code>transform: none|transform-functions;</code>
+<ul>
+<li>none  定义不进行转换。</li>
+<li>matrix(n,n,n,n,n,n) 定义 2D 转换，使用六个值的矩阵。</li>
+<li>matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n) 定义 3D 转换，使用 16 个值的 4x4 矩阵。</li>
+<li>translate(x,y)  定义 2D 转换。</li>
+<li>translate3d(x,y,z)  定义 3D 转换。 </li>
+<li>translateX(x) 定义转换，只是用 X 轴的值。 </li>
+<li>translateY(y) 定义转换，只是用 Y 轴的值。 </li>
+<li>translateZ(z) 定义 3D 转换，只是用 Z 轴的值。 </li>
+<li>scale(x,y)  定义 2D 缩放转换。 </li>
+<li>scale3d(x,y,z)  定义 3D 缩放转换。 </li>
+<li>scaleX(x) 通过设置 X 轴的值来定义缩放转换。  </li>
+<li>scaleY(y) 通过设置 Y 轴的值来定义缩放转换。  </li>
+<li>scaleZ(z) 通过设置 Z 轴的值来定义 3D 缩放转换。  </li>
+<li>rotate(angle) 定义 2D 旋转，在参数中规定角度。 </li>
+<li>rotate3d(x,y,z,angle) 定义 3D 旋转。 </li>
+<li>rotateX(angle)  定义沿着 X 轴的 3D 旋转。  </li>
+<li>rotateY(angle)  定义沿着 Y 轴的 3D 旋转。  </li>
+<li>rotateZ(angle)  定义沿着 Z 轴的 3D 旋转。  </li>
+<li>skew(x-angle,y-angle) 定义沿着 X 和 Y 轴的 2D 倾斜转换。  </li>
+<li>skewX(angle)  定义沿着 X 轴的 2D 倾斜转换。  </li>
+<li>skewY(angle)  定义沿着 Y 轴的 2D 倾斜转换。  </li>
+<li>perspective(n)  为 3D 转换元素定义透视视图。</li>
+</ul></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>transform-origin</code><mark>CSS3</mark><p>允许你改变被转换元素的位置。</p></div>
+    <div class="col-sm-8"><p><code>transform-origin: x-axis y-axis z-axis;</code>
+<ul>
+<li>x-axis  
+定义视图被置于 X 轴的何处。可能的值：
+left
+center
+right
+length
+%</li>
+<li>y-axis  
+定义视图被置于 Y 轴的何处。可能的值：
+top
+center
+bottom
+length
+%</li>
+<li>z-axis  
+定义视图被置于 Z 轴的何处。可能的值：
+length</li></ul></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>transform-style</code><mark>CSS3</mark><p>规定被嵌套元素如何在 3D 空间中显示。</p></div>
+    <div class="col-sm-8"><p><code>transform-style: flat|preserve-3d;</code><br />
+flat  子元素将不保留其 3D 位置。<br />
+preserve-3d 子元素将保留其 3D 位置。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>perspective</code><mark>CSS3</mark><p>规定 3D 元素的透视效果。</p></div>
+    <div class="col-sm-8"><p><code>perspective: number|none;</code><br />
+number  元素距离视图的距离，以像素计。<br />
+none  默认值。与 0 相同。不设置透视。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>perspective-origin</code><mark>CSS3</mark><p>规定 3D 元素的底部位置。</p></div>
+    <div class="col-sm-8"><p><code>perspective-origin: x-axis y-axis;</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>backface-visibility</code><mark>CSS3</mark><p>定义元素在不面对屏幕时是否可见。</p></div>
+    <div class="col-sm-8"><p><code>backface-visibility: visible|hidden;</code></p></div>
+  </div>
+
+  <div class="row">
+    <div id="css-transition" class="col-sm-12"><h3>过渡属性（Transition）<small>IE10+</small></h3></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>transition</code><mark>CSS3</mark><p>简写属性，用于在一个属性中设置四个过渡属性。</p></div>
+    <div class="col-sm-8"><p><code>transition: property duration timing-function delay;</code><br />
+transition-property 规定设置过渡效果的 CSS 属性的名称。<br />
+transition-duration 规定完成过渡效果需要多少秒或毫秒。<br />
+transition-timing-function  规定速度效果的速度曲线。<br />
+transition-delay  定义过渡效果何时开始。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>transition-property</code><mark>CSS3</mark><p>规定应用过渡的 CSS 属性的名称。</p></div>
+    <div class="col-sm-8"><p><code>transition-property: none|all|property;</code><br />
+none  没有属性会获得过渡效果。<br />
+all 所有属性都将获得过渡效果。<br />
+property  定义应用过渡效果的 CSS 属性名称列表，列表以逗号分隔。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>transition-duration</code><mark>CSS3</mark><p>定义过渡效果花费的时间。</p></div>
+    <div class="col-sm-8"><p><code>transition-duration: time;</code><br />
+time  
+规定完成过渡效果需要花费的时间（以秒或毫秒计）。
+默认值是 0，意味着不会有效果。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>transition-timing-function</code><mark>CSS3</mark><p>规定过渡效果的时间曲线。</p></div>
+    <div class="col-sm-8"><p><code>transition-timing-function: linear|ease|ease-in|ease-out|ease-in-out|cubic-
+bezier(n,n,n,n);</code>
+<ul>
+<li>linear  规定以相同速度开始至结束的过渡效果（等于 cubic-bezier(0,0,1,1)）。</li>
+<li>ease  规定慢速开始，然后变快，然后慢速结束的过渡效果（cubic-bezier(0.25,0.1,0.25,1)）。</li>
+<li>ease-in 规定以慢速开始的过渡效果（等于 cubic-bezier(0.42,0,1,1)）。</li>
+<li>ease-out  规定以慢速结束的过渡效果（等于 cubic-bezier(0,0,0.58,1)）。</li>
+<li>ease-in-out 规定以慢速开始和结束的过渡效果（等于 cubic-bezier(0.42,0,0.58,1)）。</li>
+<li>cubic-bezier(n,n,n,n) 在 cubic-bezier 函数中定义自己的值。可能的值是 0 至 1 之间的数值。</li></ul></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>transition-delay</code><mark>CSS3</mark><p>规定过渡效果何时开始。</p></div>
+    <div class="col-sm-8"><p><code>transition-delay: time;</code><br />
+time  规定在过渡效果开始之前需要等待的时间，以秒或毫秒计。</p></div>
+  </div>
+
+  <div class="row">
+    <div id="css-ui" class="col-sm-12"><h3>用户界面属性（User-interface）</h3></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>appearance</code><mark>CSS3</mark><p>允许您将元素设置为标准用户界面元素的外观</p></div>
+    <div class="col-sm-8"><p><code>appearance: normal|icon|window|button|menu|field;</code>
+<ul><li>normal  将元素呈现为常规元素。</li>
+<li>icon  将元素呈现为图标（小图片）。</li>
+<li>window  将元素呈现为视口。</li>
+<li>button  将元素呈现为按钮。</li>
+<li>menu  将元素呈现为一套供用户选择的选项。</li>
+<li>field 将元素呈现为输入字段。</li></ul></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>box-sizing</code><mark>CSS3</mark><p>允许您以确切的方式定义适应某个区域的具体内容。</p></div>
+    <div class="col-sm-8"><p><code>box-sizing: content-box|border-box|inherit;</code>
+<ul><li>content-box 
+这是由 CSS2.1 规定的宽度高度行为。
+宽度和高度分别应用到元素的内容框。
+在宽度和高度之外绘制元素的内边距和边框。</li>
+<li>border-box  
+为元素设定的宽度和高度决定了元素的边框盒。
+就是说，为元素指定的任何内边距和边框都将在已设定的宽度和高度内进行绘制。
+通过从已设定的宽度和高度分别减去边框和内边距才能得到内容的宽度和高度。
+inherit 规定应从父元素继承 box-sizing 属性的值。</li></ul></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>outline-offset</code><mark>CSS3</mark><p>对轮廓进行偏移，并在超出边框边缘的位置绘制轮廓。</p></div>
+    <div class="col-sm-8"><p><code>outline-offset: length|inherit;</code><br />
+length  轮廓与边框边缘的距离。<br />
+inherit 规定应从父元素继承 outline-offset 属性的值。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><code>resize</code><mark>CSS3</mark><p>规定是否可由用户对元素的尺寸进行调整。</p></div>
+    <div class="col-sm-8"><p><code>resize: none|both|horizontal|vertical;</code>
+<ul><li>none  用户无法调整元素的尺寸。</li>
+<li>both  用户可调整元素的高度和宽度。</li>
+<li>horizontal  用户可调整元素的宽度。</li>
+<li>vertical  用户可调整元素的高度。</li></ul></p></div>
+  </div>
+
+  <div class="row">
+    <div id="html27" class="col-sm-12 white"><h2>附录</h2></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><p>CSS语法</p></div>
+    <div class="col-sm-8"><p><code>选择符 {属性 声明 值;｝</code><br /><code>p {color : red;}</code><br />注释:<code>/*...*/</code></p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><p>CSS引入方法</p></div>
+    <div class="col-sm-8"><p>内联式：<code>&lt;p style="color:red;font-size:12px"&gt;这里文字是红色。&lt;/p&gt;</code><br />嵌入式：</p><pre>&lt;style type="text/css"&gt;    
+选择器 {
+  样式;
+}
+&lt;/style&gt;</pre><p>外部式：<code>&lt;link href="base.css" rel="stylesheet" type="text/css" /&gt;</code><br /><code>rel="stylesheet" type="text/css" </code>是固定写法不可修改。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><p>权值</p></div>
+    <div class="col-sm-8"><p>标签的权值为1，类选择符的权值为10，ID选择符的权值最高为100。<br />
+      例如下面的代码：<br />
+      p{color:red;} /*权值为1*/<br />
+      p span{color:green;} /*权值为1+1=2*/<br />
+      .warning{color:white;} /*权值为10*/<br />
+      p span.warning{color:purple;} /*权值为1+1+10=12*/<br />
+      #footer .note p{color:yellow;} /*权值为100+10+1=111*/<br />
+      注意：还有一个权值比较特殊--“继承”也有权值但很低，有的文献提出它只有0.1，所以可以理解为继承的权值最低。</p><p>层叠就是在html文件中对于同一个元素可以有多个css样式存在，当有相同权重的样式存在时，会根据这些css样式的前后顺序来决定，处于最后面的css样式会被应用。<br />
+      内联样式表（标签内部）> 嵌入样式表（当前文件中）> 外部样式表（外部文件中）</p><p>我们在做网页代码的时，有些特殊的情况需要为某些样式设置具有最高权值，怎么办？这时候我们可以使用!important来解决。<br />
+      <code>p{color:red!important;}</code><br />
+      注意：!important要写在分号的前面<br />
+      浏览器默认的样式 &lt; 网页制作者样式 &lt; 用户自己设置的样式</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><p>CSS盒子模型</p></div>
+    <div class="col-sm-8"><p>一个元素实际宽度（盒子的宽度）=左边界+左边框+左填充+内容宽度+右填充+右边框+右边界。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><p>css布局模型</p></div>
+    <div class="col-sm-8"><p>1、流动模型（Flow）<br />
+      流动（Flow）是默认的网页布局模式。也就是说网页在默认状态下的 HTML 网页元素都是根据流动模型来分布网页内容的。<br />
+      特征：<br />
+      (1)块状元素都会在所处的包含元素内自上而下按顺序垂直延伸分布，因为在默认状态下，块状元素的宽度都为100%。<br />
+      (2)内联元素都会在所处的包含元素内从左到右水平分布显示。</p>
+      <p>2、浮动模型 (Float)<br />
+      <code>float:left;float:right;</code></p>
+      <p>3、层模型（Layer）<br />
+      (1)绝对定位(position: absolute)<br />
+      使用left、right、top、bottom属性相对于其最接近的一个具有定位属性的父包含块进行绝对定位。如果不存在这样的包含块，则相对于body元素，即相对于浏览器窗口。<br />
+      (2)相对定位(position: relative)<br />
+      通过left、right、top、bottom属性确定元素在正常文档流中的偏移位置。相对于以前的位置移动，移动的方向和幅度由left、right、top、bottom属性确定，偏移前的位置保留不动。<br />
+      (3)固定定位(position: fixed)<br />
+      固定定位的元素会始终位于浏览器窗口内视图的某个位置，不会受文档流动影响</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><p>水平居中</p></div>
+    <div class="col-sm-8"><p>1.行内元素：<code>text-align:center;</code></p>
+    <p>2.定宽块状元素：<code>margin:20px auto;</code></p>
+    <p>3.不定宽块状元素：<br />
+    (1)加入 table 标签<br />
+    利用table标签的长度自适应性---即不定义其长度也不默认父元素body的长度（table其长度根据其内文本长度决定），因此可以看做一个定宽度块元素，然后再利用定宽度块状居中的margin的方法，使其水平居中。缺点：增加无语义标签。<br />
+    (2)设置 display: inline <br />方法：与第一种类似，显示类型设为行内元素，进行不定宽元素的属性设置。缺点：它将块状元素的 display 类型改为 inline，变成了行内元素，所以少了一些功能，比如设定长度值。<br />
+    (3)设置 position:relative 和 left:50%<br />
+    利用相对定位的方式，将元素向左偏移 50% ，即达到居中的目的。通过给父元素设置 float，然后给父元素设置 position:relative 和 left:50%，子元素设置 position:relative 和 left: -50% 来实现水平居中。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><p>垂直居中</p></div>
+    <div class="col-sm-8"><p>1.父元素高度确定的单行文本<br />
+      通过设置父元素的 height 和 line-height 高度一致来实现的。(height: 该元素的高度，line-height: 行高（行间距），行与行之间的基线间的距离 )。<br />
+      弊端：当文字内容的长度大于块的宽时，就有内容脱离了块。</p>
+      <p>2.父元素高度确定的多行文本<br />
+      (1)使用插入 table  (包括tbody、tr、td)标签，同时设置 vertical-align：middle。<br />
+      (2)在 chrome、firefox 及 IE8 以上的浏览器下可以设置块级元素的 display 为 table-cell（设置为表格单元显示），激活 vertical-align 属性，但注意 IE6、7 并不支持这个样式, 兼容性比较差。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><p>隐性改变display类型</p></div>
+    <div class="col-sm-8"><p> 1. <code>position : absolute </code><br />
+      2. <code>float : left</code> 或 <code>float:right</code><br />
+      只要html代码中出现以上两句之一，元素的display显示类型就会自动变为以display:inline-block的方式显示，当然就可以设置元素的 width 和 height 了，且默认宽度不占满父元素。</p></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><p>颜色值</p></div>
+    <div class="col-sm-8"><table class="table table-bordered">
+      <tr><td>黑</td><td>#000000</td></tr>
+      <tr><td>红</td><td>#FF0000</td></tr>
+      <tr><td>绿</td><td>#00FF00</td></tr>
+      <tr><td>蓝</td><td>#0000FF</td></tr>
+      <tr><td>黄</td><td>#FFFF00</td></tr>
+      <tr><td>蓝</td><td>#00FFFF</td></tr>
+      <tr><td>玫</td><td>#FF00FF</td></tr>
+      <tr><td>灰</td><td>#C0C0C0</td></tr>
+      <tr><td>白</td><td>#FFFFFF</td></tr></table></div>
+  </div>
+
+</div>
+
+	<footer class="container-fluid footer">
+    <p>Copyright © 2016 <a href="#">Dulx's Wiki</a> <a href="http://www.miitbeian.gov.cn/" target="_blank"> 皖ICP备16003624号</a></p>
+  </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery-1.11.2.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/myjs.js"></script>
+  </body>
+</html>
